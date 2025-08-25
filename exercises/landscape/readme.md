@@ -4,9 +4,11 @@ BTP XP264 master landscape
 All the internal info is aggregated in the following issue:  
   * https://github.tools.sap/kyma/backlog/issues/7596
 
-  
-TODO: Add the pictture of the master btp landscape...  
 
+TODO: Add the picture of the master btp landscape...  
+
+
+<img width="1669" height="841" alt="image" src="https://github.com/user-attachments/assets/5e9093ca-051a-462e-9b93-c2b8132c7166" />
 
 
 
