@@ -1,26 +1,27 @@
-# Level 1 Heading
+# Exercise 0 - Preparation Steps
 
-In this exercise, you will...
+In this exercise, you will create your own copy of this repository and optionally, set up a GitHub account.
 
-## Level 2 Heading
+Finally you will login to for this session prepared BTP account.
 
-After completing these steps you will have....
+## Exercise 0.0 - (Optional) Create a GitHub account
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+1. Navigate to [GitHub](https://github.com/).
 
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+2. Click **Sign up for GiHhub**.
 
-## Summary
+3. Alternatevly, click on **Continue with Google** to sign up using social login.
 
-Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+4. Follow the prompts to create your personal account.
+
+## Exercise 0.1 - Create a Copy of This Repository
+
+1. Login to [GitHub](https://github.com/).
+
+2. On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP266), choose **Fork** on the top right.
+
+   <br>![](../ex0/images/fork_entry.png)
+
+3. Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
+
+   <br>![](../ex0/images/fork_details.png)
