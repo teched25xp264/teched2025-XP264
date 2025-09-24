@@ -35,7 +35,6 @@ Finally you will login to for this session prepared BTP account.
 2. Click "Sign In" and enter the for this session provided user credentials
 
 3. After the BPT Cockpit has been loaded, you should see following account structure:
-  * a. with the master landscape:
 
 <img width="1146" height="589" alt="image" src="https://github.com/user-attachments/assets/bb958aee-cd70-496d-b73c-0736ba01c1c1" />
 
