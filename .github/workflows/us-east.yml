@@ -75,7 +75,7 @@
 
         cat ./kymaprod-oidc.yaml
 
-"name": "us-east"
+"name": "btp-runtime-dbe7346b-88da-430a-8777-4f6aa3e22b5e"
 "on":
   "workflow_dispatch": null
 "permissions":
