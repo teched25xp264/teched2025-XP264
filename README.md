@@ -17,7 +17,7 @@ Explore operational best practices from mastering troubleshooting techniques and
 The requirements to follow the exercises in this repository are...
 
   * You need to have a GitHub user. If you don't have one so far, please sign-up on GitHub before going through the exercises
-  * Additional configuration on your SAP TECHED 2025 Client laptop
+  * Additional configuration on your SAP TECHED 2025 Client laptop 
     
   kubectl plugins | install [jq](https://jqlang.org/download/) | [Kyma CLI for SAP BTP, Kyma Runtime](https://tools.hana.ondemand.com/#cloud) |
   -- | -- | -- |
@@ -33,7 +33,7 @@ The requirements to follow the exercises in this repository are...
   * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercicse-01---create-a-copy-of-this-repository)
   * [Exercise 0.2 - Discover your BTP landscape](exercises/ex0#exercise-02---login-to-your-btp-subaccount)
 
-* #### [Exercise 1 - BTP Kyma easy with kyma CLI ](exercises/ex1#exercise-1---set-up-your-delivery-pipeline-and-transport-landscape)
+* #### [Exercise 1 - SAP BTP, Kyma runtime easy with kyma CLI ](exercises/ex1#exercise-1---set-up-your-delivery-pipeline-and-transport-landscape)
 
   * [Exercise 1.0 - Get your hands dirty with kyma CLI](exercises/ex1#exercise-10---optional-create-a-github-account)
 

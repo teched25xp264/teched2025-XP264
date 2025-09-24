@@ -35,7 +35,7 @@ Finally you will login to for this session prepared BTP account.
 2. Click "Sign In" and enter the for this session provided user credentials
 
 3. After the BPT Cockpit has been loaded, you should see following account structure:
-4. with the master landscape:
+  * a. with the master landscape:
 
 <img width="1146" height="589" alt="image" src="https://github.com/user-attachments/assets/bb958aee-cd70-496d-b73c-0736ba01c1c1" />
 
@@ -45,7 +45,7 @@ Finally you will login to for this session prepared BTP account.
 | btp-argocd                |  Session Master  | with a shared ArgoCD instance (with SSO for all participants)             |
 | btp-bootstrap             |  Session Master  | XP264 session bootstrap context for the terraform automation. |
 | btp-provider              |  Session Master  | with shared SAP HANA Cloud and Cloud Logging (SAML SSO) services instances.|
-| btp-runtime               |  Reference Kyma Pod  | a reference runtime context with the master kyma environment           |
+| btp-runtime               |  Reference Kyma Pod  | reference runtime context with the master kyma environment           |
 | xp264-***                 |  Session Student Pod | Students runtime contexts with the dedcicated kyma environments.       |
 
 Each student's pod has SAP Cloud Connector, for instance:
