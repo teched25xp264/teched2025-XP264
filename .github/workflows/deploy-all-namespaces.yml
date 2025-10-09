@@ -15,6 +15,6 @@ jobs:
     # https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows#calling-a-reusable-workflow
     # https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows#using-a-matrix-strategy-with-a-reusable-workflow
     uses: ./.github/workflows/reuse.yml
-      with:
-        NAMESPACE: ${{ matrix.namespace }}
-      #secrets: inherit
+    with:
+      NAMESPACE: ${{ matrix.namespace }}
+    #secrets: inherit
