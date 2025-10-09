@@ -8,6 +8,7 @@
     - "name": "Check out Git repository"
       "uses": "actions/checkout@v4"
       with:
+        token: "${{ secrets.CICD_TOKEN_FOR_TF_MODULES }}"
         ref: main 
     - "name": "Install Helm"
       "uses": "azure/setup-helm@v4"
