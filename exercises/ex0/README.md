@@ -111,6 +111,10 @@ Easy navigation with the session landscape site:
 </tbody>
 </table>   
 
+
+[![Easy navigation with the session landscape site](../ex0/images/site_navigation.png)](https://url.sap/3kf0ol) 
+
+
 ## Summary
 
 Now that you have everything you need to successfully go through this TechEd session:
