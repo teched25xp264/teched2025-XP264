@@ -137,21 +137,15 @@ env:
         export KUBE_CONFIG_PATH=$KUBECONFIG
         export CONFIG_DIRECTORY=${{ env.CONFIG_DIRECTORY }}
 
-        export GITHUB_OWNER=${{ env.GITHUB_OWNER }}
-        export GITHUB_TOKEN=${{ secrets.PAT_GITHUB_TOOLS_SAP }}
-
         #export BTP_USERNAME=${{ vars.BTP_USERNAME }}
         #export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
         export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
-        #export BTP_IDTOKEN=${{steps.get-github-jwt.outputs.githubJwt}}
 
         export RUNTIME_INDEX=${{ env.RUNTIME_INDEX }}
         export TF_VAR_runtime_context_workspace=${{ env.RUNTIME_CONTEXT_WORKSPACE }}
   
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} ${{ env.RUNTIME_ACTION }} \
         -var BTP_GLOBAL_ACCOUNT=${{ github.event.inputs.GLOBALACCOUNT }} \
-        -var BTP_BOT_USER=${{ vars.BTP_USERNAME }} \
-        -var BTP_BOT_PASSWORD=${{ secrets.BTP_PASSWORD }} \
         -var BTP_CUSTOM_IDP=${{ github.event.inputs.IDP }} \
         -var BTP_SUBACCOUNT=${{ github.event.inputs.subaccount_name }} \
         -var POSTGRES_ALLOW_ACCESS=${{ vars.POSTGRES_ALLOW_ACCESS }} \
@@ -165,9 +159,10 @@ env:
         terraform workspace select ${{ env.RUNTIME_WORKSPACE }}
         export TF_WORKSPACE=${{ env.RUNTIME_WORKSPACE }}
 
-        export BTP_USERNAME=${{ vars.BTP_USERNAME }}
-        export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
+        #export BTP_USERNAME=${{ vars.BTP_USERNAME }}
+        #export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
 
+        export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} state list
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output
 

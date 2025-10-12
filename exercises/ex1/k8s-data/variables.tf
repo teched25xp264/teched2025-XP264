@@ -6,16 +6,6 @@ variable "BTP_GLOBAL_ACCOUNT" {
   description = "Global account name"
 }
 
-variable "BTP_BOT_USER" {
-  type        = string
-  description = "Bot account name"
-}
-
-variable "BTP_BOT_PASSWORD" {
-  type        = string
-  description = "Bot account password"
-}
-
 variable "BTP_BACKEND_URL" {
   type        = string
   description = "BTP CLI backend URL - defaults to live/trial BTP landscapes"
