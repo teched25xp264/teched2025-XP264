@@ -171,6 +171,7 @@ output "kyma_parameters_ascii_qrcode" {
 output "kyma_serviceaccount" {
   description = "kyma_serviceaccount: requires kubectl-view_serviceaccount_kubeconfig plugin"
   value = "kubectl-view_serviceaccount_kubeconfig  default -n quovadis-btp"
+}
 
 output "kyma_resource-capacity" {
   description = "kyma_resource-capacity: requires resource-capacity kubectl plugin"
