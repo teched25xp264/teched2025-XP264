@@ -91,16 +91,6 @@ output "ns-present" {
   value = contains(data.kubernetes_all_namespaces.allns.namespaces, "kube-system")
 }
 
-output "kyma_serviceaccount" {
-  description = "kyma_serviceaccount: requires kubectl-view_serviceaccount_kubeconfig plugin"
-  value = "kubectl-view_serviceaccount_kubeconfig  default -n quovadis-btp  --kubeconfig <(terraform output -raw kubeconfig_bot_exec)"
-}
-
-output "kyma_resource-capacity" {
-  description = "kyma_resource-capacity: requires resource-capacity kubectl plugin"
-  value = "kubectl resource-capacity  --kubeconfig <(terraform output -raw kubeconfig_bot_exec)"
-}
-
 output "kyma_provisioning_info" {
   description = "kyma_provisioning_info"
   sensitive   = true
