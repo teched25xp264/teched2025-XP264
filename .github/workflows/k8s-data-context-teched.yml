@@ -295,8 +295,8 @@ env:
       shell: bash
       run: |
 
-        echo "khtmloutput"
-        #echo ${{ steps.json2html.outputs.htmloutput }}
+        echo "htmloutput"
+        echo ${{ steps.json2html.outputs.htmloutput }}
 
 "name": "k8s-data-context-teched"
 
