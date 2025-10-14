@@ -259,7 +259,7 @@ env:
 
         export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} state list
-        terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output
+        terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -json > tf_output.json
 
         kubeconfig_sa=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -raw kubeconfig-sa)
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -json kyma_parameters
@@ -271,6 +271,17 @@ env:
         RUNTIME_CONTEXT_WORKSPACE: "runtime-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
         RUNTIME_WORKSPACE: "k8s-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
         PROVIDER_WORKSPACE: "provider-context-${{steps.cluster_info.outputs.GLOBALACCOUNT}}" 
+
+    - name: Convert JSON to HTML Table
+      uses: Teebra/JSON-to-HTML-table@v2.0.0
+      with:
+        json-file: ./tf_output.json  # Specify the path to your JSON file
+
+    - name: Upload HTML Table to Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: output_html 
+        path: output.html # The created file's name is output.html. Name cannot be changed
 
 
     - name: Terraform Results
