@@ -148,7 +148,6 @@ data "btp_subaccount_trust_configuration" "custom_idp" {
 }
 
 
-#
 
 # look up services offerings available on sapbtp environment in a given subaccount
 data "btp_subaccount_service_offerings" "sapbtp" {
@@ -156,8 +155,14 @@ data "btp_subaccount_service_offerings" "sapbtp" {
   environment   = "sapbtp"
 }
 
+
+output "sapbtp" {
+  value = data.btp_subaccount_service_offerings.sapbtp.values
+}
+
+/*
 resource "time_sleep" "subscription_propagation" {
-  create_duration = "120s"
+  create_duration = "60s"
 
   triggers = {
     # This sets up a proper dependency on the faas-app-xp264-049-saas subscription association
@@ -182,5 +187,5 @@ resource "btp_subaccount_subscription" "faas-xp264-mt" {
     delete = "15m"
   }  
 }
-
+*/
 
