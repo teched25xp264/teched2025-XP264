@@ -43,7 +43,7 @@ output "consumer_tenant_url" {
   value = local.consumer_tenant_url
 }
 
-/*
+
 data "btp_subaccount_subscription" "faas_xp264_mt" {
 
   subaccount_id = data.btp_subaccount.context.id
@@ -53,6 +53,6 @@ data "btp_subaccount_subscription" "faas_xp264_mt" {
 
 
 output "faas_xp264_mt_subscription_url" {
-  value = one(btp_subaccount_subscription.faas_xp264_mt[*].subscription_url)
+  value = btp_subaccount_subscription.faas_xp264_mt.subscription_url
 }
-*/
+
