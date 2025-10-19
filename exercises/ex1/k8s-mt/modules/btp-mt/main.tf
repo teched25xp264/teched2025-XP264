@@ -196,7 +196,7 @@ data "btp_subaccount_subscription" "faas_xp264_mt" {
 
   subaccount_id = data.btp_subaccount.context.id
   app_name      = local.faas-app-xp264-049-saas[0]["app_name"]
-  plan_name     = local.faas-app-xp264-049-saas[0]["plan_name"]) 
+  plan_name     = local.faas-app-xp264-049-saas[0]["plan_name"]
 }
 
 output "faas_xp264_mt_subscription_url" {
