@@ -111,7 +111,7 @@ resource "btp_subaccount_role_collection_assignment" "subaccount_platform_idp_gr
 #
 resource "btp_subaccount_role_collection_assignment" "subaccount_custom_idp_groups" {
 
-  depends_on           = [btp_subaccount_subscription.custom_idp.faas-xp264-mt]
+  depends_on           = [btp_subaccount_subscription.faas-xp264-mt]
 
   for_each             = toset( "${var.admin_groups}" ) 
   subaccount_id        = data.btp_subaccount.context.id
