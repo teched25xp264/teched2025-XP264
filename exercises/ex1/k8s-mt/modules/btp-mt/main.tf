@@ -221,7 +221,7 @@ resource "btp_subaccount_subscription" "faas_xp264_mt" {
 data "btp_subaccount_subscription" "faas_xp264_mt" {
   count = length(var.TECHED_MT_SUBSCRIPTION[*]) != 0 ? 1 : 0
 
-  depends_on    = [btp_subaccount_trust_configuration.faas_xp264_mt]
+  depends_on    = [btp_subaccount_subscription.faas_xp264_mt]
 
   subaccount_id = data.btp_subaccount.context.id
   app_name      = one(time_sleep.subscription_propagation[*].triggers["app_name"]) 
