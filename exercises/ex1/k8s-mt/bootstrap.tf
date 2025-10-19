@@ -6,4 +6,6 @@ module "mt_context" {
   BTP_CUSTOM_IDP = var.BTP_CUSTOM_IDP
   BTP_SA_REGION  = var.BTP_SA_REGION
   admin_groups   = var.admin_groups
+
+  TECHED_MT_SUBSCRIPTION = var.TECHED_MT_SUBSCRIPTION
 }

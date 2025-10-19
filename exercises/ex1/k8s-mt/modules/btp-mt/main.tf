@@ -110,6 +110,7 @@ resource "btp_subaccount_role_collection_assignment" "subaccount_platform_idp_gr
 # Assign users to Role Collection: subaccount emergency_admin (with sap.custom)
 #
 resource "btp_subaccount_role_collection_assignment" "subaccount_custom_idp_groups" {
+  count = length(var.TECHED_MT_SUBSCRIPTION) != 0 ? 1 : 0
 
   depends_on           = [btp_subaccount_subscription.faas-xp264-mt]
 
@@ -160,8 +161,10 @@ output "sapbtp" {
   value = data.btp_subaccount_service_offerings.sapbtp.values
 }
 
-/*
+
 resource "time_sleep" "subscription_propagation" {
+  count = length(var.TECHED_MT_SUBSCRIPTION) != 0 ? 1 : 0
+
   create_duration = "60s"
 
   triggers = {
@@ -176,6 +179,8 @@ resource "time_sleep" "subscription_propagation" {
 
 
 resource "btp_subaccount_subscription" "faas-xp264-mt" {
+  count = length(var.TECHED_MT_SUBSCRIPTION) != 0 ? 1 : 0
+
   depends_on    = [btp_subaccount_trust_configuration.custom_idp]
 
   subaccount_id = data.btp_subaccount.context.id
@@ -187,5 +192,5 @@ resource "btp_subaccount_subscription" "faas-xp264-mt" {
     delete = "15m"
   }  
 }
-*/
+
 

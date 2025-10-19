@@ -34,3 +34,9 @@ variable "admin_groups" {
   description = "Defines the platform IDP groups to be added to each subaccount as administrators."
   default     = ["GitHub", "XP264_INST","XP264","CLS_admin"]
 }
+
+var "TECHED_MT_SUBSCRIPTION" {
+  type        = string
+  description = "TECHED_MT_SUBSCRIPTION"
+  default     = null
+}
