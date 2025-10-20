@@ -31,11 +31,11 @@ The requirements to follow the exercises in this repository are...
   installing the oidc-login plugin | |
   install view-serviceaccount-kubeconfig plugin | |
 
-  * Github actions (GHA). You may run the GHA-based exercises direclty from a browser on the laptop from your forked repository. Alternatively, you may use VSCode terminal and other plugins you may be familiar with.
+  * Github actions (GHA). You may run the GHA-based exercises direclty from a browser on the laptop from your forked repository.  Alternatively, you may use VSCode terminal and other plugins you may be familiar with.
 
   * As this is a Day-2 operation brief, the entire cloud landscape has been pre-configured with a number of shared components like SAP Cloud Logging, SAP HANA Cloud and others.  
-  All the SAP Kyma environments have been configured to the same template.  
-  Each SAP Kyma kubernetes ckuster offers the same setup with very minor differences...
+    * All the SAP Kyma environments have been configured to the same template.  
+    * Each SAP Kyma kubernetes ckuster offers the same setup with very minor differences...
 
 ## Exercises
 
