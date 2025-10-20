@@ -17,6 +17,7 @@ This session introduces attendees to **Day-2** operation with SAP BTP, Kyma runt
 
   * how to run applications on the Kyma runtime for SAP BTP and discover the power of smooth integration with cloud applications and on-premise systems using the advanced connectivity features.  
   * to explore operational best practices from mastering troubleshooting techniques and intelligent root-cause analysis to event-driven autoscaling that adapts to your business needs in real time.
+  * about multitenant application with SAP BTP, Kyma runtime.
 
 ## Requirements
 
@@ -37,6 +38,8 @@ The requirements to follow the exercises in this repository are...
     * All the SAP Kyma environments have been configured to the same template (via terraform automation).  
     * Each SAP Kyma kubernetes cluster offers the same setup (with very minor differences)...
 
+  * Last but not least, you will be able to *play* with a pre-deployed multitenant application which follows BTP multitenancy paradigm.  
+  
 ## Exercises
 
 * #### [Exercise 0 - Preparation Steps](exercises/ex0#exercice-0---preparation-steps)
