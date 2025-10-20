@@ -9,24 +9,31 @@ This repository contains the material for the SAP TechEd 2025 session catalog nu
 
 ## Overview
 
-This session introduces attendees to SAP BTP, Kyma runtime - a flexible and easy way to connect and extend enterprise applications in the cloud-native world.  
+This session introduces attendees to **Day-2** operation with SAP BTP, Kyma runtime - a flexible and easy way to connect and extend enterprise applications in the cloud-native world.  
+
 **Kyma** as of such, part of [Kyma project](https://github.com/kyma-project), is an opinionated set of Kubernetes-based modular building blocks (modules) that provide all the necessary capabilities to develop and run enterprise-grade cloud-native applications.
 
-Learn how to run applications on the Kyma runtime for SAP BTP and discover the power of smooth integration with cloud applications and on-premise systems using advanced connectivity features.  
-Explore operational best practices from mastering troubleshooting techniques and intelligent root-cause analysis to event-driven autoscaling that adapts to your business needs in real time.
+  * Learn how to run applications on the Kyma runtime for SAP BTP and discover the power of smooth integration with cloud applications and on-premise systems using the advanced connectivity features.  
+  * Explore operational best practices from mastering troubleshooting techniques and intelligent root-cause analysis to event-driven autoscaling that adapts to your business needs in real time.
 
 ## Requirements
 
 The requirements to follow the exercises in this repository are...
 
   * You need to have a GitHub user. If you don't have one so far, please sign-up on GitHub before going through the exercises
-  * Additional configuration on your SAP TECHED 2025 Client laptop 
+  * Additional configuration on your SAP TECHED 2025 Client laptop (that should be pre-installed)
     
   kubectl plugins | install [jq](https://jqlang.org/download/) | [Kyma CLI for SAP BTP, Kyma Runtime](https://tools.hana.ondemand.com/#cloud) |
   -- | -- | -- |
   install [krew.exe](https://github.com/kubernetes-sigs/krew/releases/download/v0.4.5/krew.exe) | install jq with `winget install jqlang.jq` | install [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
   installing the oidc-login plugin | |
   install view-serviceaccount-kubeconfig plugin | |
+
+  * Github actions (GHA). You may run the GHA-based exercises direclty from a browser from your forked repository. Alternatively, you may use VSCode termainal and other plugins you may be familiar with.
+
+  * As this is a Day-2 operation brief, the entire cloud landscape has been pre-configured with a number of shared components like SAP Cloud Logging, SAP HANA Cloud.  
+  All the SAP Kyma environments have been configured to the same template.  
+  Each SAP Kyma kubernetes ckuster offers the same setup with very minor differences...
 
 ## Exercises
 
