@@ -121,7 +121,7 @@
         ./kyma alpha kubeconfig generate --oidc-name kymaprod-oidc --output=kymaprod-oidc.yaml
 
         cat kymaprod-oidc.yaml
-"name": "japan-east-2a6fe480-ac84-4751-ad37-56ec2a493932-admin"
+"name": "japan-east--admin"
 "on":
   "workflow_dispatch": null
 "permissions":
