@@ -4,7 +4,7 @@
 ## Exercise 1.0 - Discover SAP Kyma architecture
 
 
-There are two main components in the SAP BTP, Kyma Runtime architecture:
+There are two main components in the SAP BTP, Kyma Runtime architecture, namely:
 
   * Kyma Control Plane (KCP)
   * Kyma Runtime (SKR)
