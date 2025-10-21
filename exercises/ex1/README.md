@@ -1,5 +1,6 @@
-# Exercise 1 - Get your hands dirty with kyma CLI
+# Exercise 1 - Getting acquainted with SAP BTP, Kyma Runtime
 
+## Architecture diagram 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -13,6 +14,7 @@
 </tbody>
 </table> 
 
+## Exercise 1.0 - Discover Kyma CLI
 
 Quoting after [Kyma CLI | SAP Help](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-cli):  
 
@@ -53,7 +55,6 @@ Please get familiar with the available [commands](https://github.com/kyma-projec
 
 ## Exercise 1.1 - Fire-fighter access to your kyma cluster
 
-Option 1. 
 
   * Download the OIDC kubeconfig from the kyma dashboard.  
 
@@ -150,7 +151,7 @@ response->set_text( |Hello World! | ).
 
 
 
-## Exercise 1.2 - Getting to know your kyma cluster
+## Exercise 1.2 - Getting to know your kyma cluster meatadata
 
 Let's leverage the kyma cli to get simple metadata
 
