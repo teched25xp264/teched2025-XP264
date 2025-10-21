@@ -55,7 +55,7 @@ The requirements to follow the exercises in this repository are...
 
 ## Exercises
 
-* #### [Exercise 0 - Preparation Steps](exercises/ex0#exercice-0---preparation-steps)
+* #### [Exercise 0 - Preparation Steps](exercises/ex0#exercise-0---preparation-steps)
 
   * [Exercise 0.0 - Sign up for a GitHub account](exercises/ex0#exercise-00---sign-up-for-a-new-github-account)
   * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercise-01---create-a-copy-of-this-repository)
@@ -76,7 +76,7 @@ The requirements to follow the exercises in this repository are...
 * #### [Exercise 2 - Keda](exercises/ex12#exercise-2---first-things-first-getting-acquainted-with-sap-btp-kyma-runtime-skr)
 
 
-* #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercice-3---exploring-kyma-telemetry-with-sap-cloud-logging)
+* #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercise-3---exploring-kyma-telemetry-with-sap-cloud-logging)
 
   * [Exercise 3.0 - Simulate some load](exercises/ex0#exercise-30---simulate-some-load)
   * [Exercise 3.1 - Access SAP Cloud Logging](exercises/ex0#exercise-31---access-sap-cloud-logging)
