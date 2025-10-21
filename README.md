@@ -76,13 +76,13 @@ The requirements to follow the exercises in this repository are...
 * #### [Exercise 2 - Keda](exercises/ex12#exercise-2---first-things-first-getting-acquainted-with-sap-btp-kyma-runtime-skr)
 
 
-* #### [Exercise 3 - Explore Kyma Telemetry Features with CLS](exercises/ex3#exercice-3---exploring-kyma-telemetry-with-sap-cloud-logging)
+* #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercice-3---exploring-kyma-telemetry-with-sap-cloud-logging)
 
-  * [Exercise 3.0 - Simulate some load](exercises/ex0#exercise-00---simulate-some-load)
-  * [Exercise 3.1 - Access SAP Cloud Logging](exercises/ex0#exercise-01---access-sap-cloud-logging)
-  * [Exercise 3.2 - Explore Logs](exercises/ex0#exercise-02---explore-logs)
-  * [Exercise 3.3 - Explore Metrics](exercises/ex0#exercise-03---explore-metrics)
-  * [Exercise 3.4 - Explore Traces](exercises/ex0#exercise-04---explore-traces)
+  * [Exercise 3.0 - Simulate some load](exercises/ex0#exercise-30---simulate-some-load)
+  * [Exercise 3.1 - Access SAP Cloud Logging](exercises/ex0#exercise-31---access-sap-cloud-logging)
+  * [Exercise 3.2 - Explore Logs](exercises/ex0#exercise-32---explore-logs)
+  * [Exercise 3.3 - Explore Metrics](exercises/ex0#exercise-33---explore-metrics)
+  * [Exercise 3.4 - Explore Traces](exercises/ex0#exercise-34---explore-traces)
 
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
