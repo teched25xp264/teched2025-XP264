@@ -63,7 +63,7 @@ Option 1.
 </table>   
 
 
-### Here goes the table with the links to all regional resources that you may need...  
+  * Here goes the table with the links to all btp and k8s resources...  
 
   | Region | Kubeconfig (download) | Console (dashboard) | Admin Worklow | Student Workflow | Data Collection Workflow
  | :--------- | :---------:  | --------- | :--------- | :------- | -----------
