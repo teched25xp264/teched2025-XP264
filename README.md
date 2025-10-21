@@ -69,7 +69,7 @@ The requirements to follow the exercises in this repository are...
 
   * [Exercise 0.0 - Sign up for a GitHub account](exercises/ex0#exercise-00---sign-up-for-a-new-github-account)
   * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercise-01---create-a-copy-of-this-repository)
-  * [Exercise 0.2 - Discover your SAP BTP managed kubernetes landscape](exercises/ex0#exercise-02---discover-your-managed-kubernetes-landscape)
+  * [Exercise 0.2 - Discover SAP-TechEd-XP264 Business Technology Platform landscape](exercises/ex0#exercise-02---discover-your-managed-kubernetes-landscape)
   * [Exercise 0.3 - Solution brief. Functional architecture](exercises/ex0#exercise-03---solution-brief-funtional-architecture)
 
 * #### [Exercise 1 - First things first. Getting to know SAP managed kubernetes runtime](exercises/ex1#exercise-1---first-things-first-getting-acquainted-with-sap-btp-kyma-runtime-skr)

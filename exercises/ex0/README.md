@@ -17,9 +17,8 @@ This step is optional and you can be use instead any existing personal GitHub ac
 
 ## Exercise 0.1 - Create a Copy of This Repository
 
-1. Login to [GitHub](https://github.com/).
-
-2. On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
+ - Login to [GitHub](https://github.com/).
+ - On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -34,7 +33,7 @@ This step is optional and you can be use instead any existing personal GitHub ac
 </tbody>
 </table>   
 
-3. Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
+ - Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -49,9 +48,9 @@ This step is optional and you can be use instead any existing personal GitHub ac
 </tbody>
 </table>   
 
-4. Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
+ - Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
 
-## Exercise 0.2 - Discover your managed kubernetes landscape
+## Exercise 0.2 - Discover SAP-TechEd-XP264 Business Technology Platform landscape
 
 1. Navigate to the [SAP Business Technology Platform - Cockpit](https://account.hana.ondemand.com/#/home/welcome)
 
