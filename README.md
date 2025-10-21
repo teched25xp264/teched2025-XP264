@@ -53,7 +53,7 @@ The requirements to follow the exercises in this repository are...
 
   * Last but not least, you will be able to *play* with a pre-deployed SAP Build multitenant application which follows BTP multitenancy paradigm.  
 
-## - [Getting Started](exercises/ex0/)
+## [Let's get started...](exercises/ex0/)
 
 * #### [Exercise 0 - Preparation Steps](exercises/ex0#exercise-0---preparation-steps)
 
