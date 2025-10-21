@@ -1,7 +1,7 @@
 # Exercise 1 - First things first. Getting acquainted with SAP BTP, Kyma Runtime (SKR)
 
 
-## Exercise 1.0 - Discover SAP BTP, Kyma Runtime  architecture
+## Exercise 1.0 - Discover SAP Kyma architecture
 
 
   * Architecture diagram 
@@ -19,7 +19,7 @@
 </table> 
 
 
-## Exercise 1.1 - Discover access to your teched landscape.
+## Exercise 1.1 - Easy access to your teched landscape.
 
   * To assist you with the discovery and ease the navigation you may use the following dashboard.  
 
