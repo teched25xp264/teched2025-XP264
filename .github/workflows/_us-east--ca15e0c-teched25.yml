@@ -80,15 +80,15 @@
         kubectl get dnsentries -A  -o json | jq -n  'inputs | .items[].spec.dnsName '
         kubectl get dnsentries -A  -o json | jq -n  'inputs | .items[].spec.dnsName  | select(contains("btp-quovadis"))'
      - "name": "install kyma cli"
-      uses: kyma-project/setup-kyma-cli@v1
-      with:
-        version: latest
+        uses: kyma-project/setup-kyma-cli@v1
+        with:
+          version: latest
     - "name": "use kyma cli"
       "run": |
          kyma -h
          kyma alpha -h
 
-    - "id": "HTTPBIN_URL"
+
     - "name": "Diagnose cluster health and configuration."
       id: cluster_info
       "run": |
@@ -101,6 +101,7 @@
         echo $DEEPLINK
         echo "DEEPLINK=$DEEPLINK" >> $GITHUB_OUTPUT
 
+    - "id": "HTTPBIN_URL"
       "name": "kyma cli: deploy a workload to both kyma and customer custom domain"
       "run": |
         kyma alpha kubeconfig generate --help

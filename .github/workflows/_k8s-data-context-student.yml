@@ -317,4 +317,3 @@ env:
 "permissions":
   "contents": "read"
   "id-token": "write"
-
