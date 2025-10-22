@@ -50,11 +50,12 @@ Each Kyma Runtime instance is a separate Kubernetes cluster managed by the KCP. 
 </table>   
 
 
-## Exercise 1.2 - A blind date with SAP Kyma. Explore Kyma environment with the ready made CI/CD workflows
+## Exercise 1.2 - A blind date with SAP Kyma. Explore Kyma environment with the ready made automation
 
-One does always need to climb the mountain of the onboarding documentation?  
-Not necessarily.  
-A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
+- Does one always need to climb the mountain of the onboarding documentation?  
+- Well, not necessarily.  
+- A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
+- Both with some CI/CD workflows and Terraform automation
 
 Let's have a look at different kyma clusters through the lenses of the ready made automation workflows...  
 
