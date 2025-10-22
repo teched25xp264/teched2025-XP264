@@ -132,7 +132,7 @@ Flags:
 Use "kyma [command] --help" for more information about a command.
 ```
 
-Alternatively, [Kyma CLI action](https://github.com/marketplace/actions/setup-kyma-cli) is already part of the automated CI/CD workflows and is available for installation in pipeline from the [github action marketplace](https://github.com/marketplace?query=kyma).  
+Alternatively, [Kyma CLI action](https://github.com/marketplace/actions/setup-kyma-cli) is already part of the automated CI/CD workflows and is available for installation in pipeline from the [github actions marketplace](https://github.com/marketplace?query=kyma).  
 
 
 ```
