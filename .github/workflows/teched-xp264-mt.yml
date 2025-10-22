@@ -223,7 +223,7 @@ env:
         -var BTP_GLOBAL_ACCOUNT=${{env.GLOBALACCOUNT}} \
         -var BTP_CUSTOM_IDP=${{ env.IDP }} \
         -var BTP_SUBACCOUNT=${{ github.event.inputs.subaccount_name }} \
-        -var subaccount_id=${{ steps.terraform_output_mt.outputs.btp_subaccount_id }} \
+#        -var subaccount_id=${{ steps.terraform_output_mt.outputs.btp_subaccount_id }} \
         -auto-approve -no-color
 
       env:
