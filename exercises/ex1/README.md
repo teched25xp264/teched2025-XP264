@@ -316,9 +316,11 @@ Run the following github action:
 
 ## Exercise 1.7 - BTP multitenancy with kyma
 
-In order to subscribe or to retrieve an existingg subscription run the following github action: 
+In order to subscribe or to retrieve an existing subscription for your user run the following github action: 
 
-
+Subscription workflow
+--------
+[teched-xp264-mt](../../../../actions/workflows/teched-xp264-mt.yml)
 
 
 ## Summary
