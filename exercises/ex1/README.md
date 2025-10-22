@@ -352,7 +352,7 @@ Good to know:
 
 - If this happens to be a first time subscription, plese goto the consumer tenant and disable the SAP IDS for user logon, as follows:
 
-
+- Please observe the consumer context is very much empty. The consumer subaccount acts as a service provider ensuring user authentication and permissions validation in order to access the subscription.
 
 ## Summary
 

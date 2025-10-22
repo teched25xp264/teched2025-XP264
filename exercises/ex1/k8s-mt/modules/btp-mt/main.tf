@@ -152,6 +152,7 @@ resource "btp_subaccount_security_settings" "sec_setting" {
 */  
 }
 
+/*
 # look up services offerings available on sapbtp environment in a given subaccount
 data "btp_subaccount_service_offerings" "sapbtp" {
   subaccount_id = data.btp_subaccount.context.id
@@ -162,7 +163,7 @@ data "btp_subaccount_service_offerings" "sapbtp" {
 output "sapbtp" {
   value = data.btp_subaccount_service_offerings.sapbtp.values
 }
-
+*/
 
 data "btp_subaccount_subscriptions" "all" {
   subaccount_id = data.btp_subaccount.context.id
