@@ -94,7 +94,7 @@ For instance:
 
 
 
-## Exercise 1.2 - Zoom on Kyma CLI
+## Exercise 1.3 - Zoom on Kyma CLI
 
 Quoting after [Kyma CLI | SAP Help](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-cli):  
 
@@ -133,7 +133,7 @@ Use "kyma [command] --help" for more information about a command.
 
 Please get familiar with the available [commands](https://github.com/kyma-project/cli/tree/3.2.0/docs/user/gen-docs)... 
 
-## Exercise 1.3 - Fire-fighter access to your kyma cluster
+## Exercise 1.4 - Fire-fighter access to your kyma cluster
 
 
   * Download the OIDC kubeconfig from the kyma dashboard.  
@@ -211,16 +211,7 @@ kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-
 ```  
 
 
-
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
-
-
-
-## Exercise 1.4 - Getting to know your kyma cluster
+## Exercise 1.5 - Getting to know your kyma cluster
 
 Let's leverage the kyma cli to get simple metadata from a kyma cluster
 
@@ -327,12 +318,12 @@ spec:
 
 
 ```
-## Exercise 1.5 - Accessing other diagnostic information with btp and kubernetes terraform providers
+## Exercise 1.6 - Accessing other diagnostic information with btp and kubernetes terraform providers
 
 Run the following github action: 
 
 
-## Exercise 1.6 - BTP multitenancy with kyma
+## Exercise 1.7 - BTP multitenancy with kyma
 
 In order to subscribe or to retrieve an existingg subscription run the following github action: 
 
