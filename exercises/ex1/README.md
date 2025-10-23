@@ -53,11 +53,12 @@ Some of the modules are added by default (istio, api-gateway and btp-operator), 
 </table>   
 
 
-## Exercise 1.2 - Explore Kyma runtime environment with built-in automation flows
+## Exercise 1.2 -Built-in automation flows
 
-- Does one always need to climb the mountain of the onboarding documentation?  
-- A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
-- Both with several pre-configured CI/CD github action workflows and Terraform automation.
+  * Explore Kyma runtime environment with built-in automation flows:
+    - Does one always need to climb the mountain of the onboarding documentation?  
+    - A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
+    - Both with several pre-configured CI/CD github action workflows and Terraform automation.
 
 Let's have a look at different kyma clusters through the lenses of the ready made automation workflows...  
 
