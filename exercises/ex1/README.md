@@ -61,6 +61,7 @@ this landscape features several pre-configured CI/CD github action workflows and
 
 Explore Kyma runtime environments with the built-in automation flows.  
 Retrieve the key information about the state of the runtime environment... at a glance.  
+Both securely and effortlessly!
 
 Please try it out yourself...
 
@@ -74,14 +75,14 @@ Please try it out yourself...
 
 
 Good to know:
-- For the best experience, please open workflow links into a tab or into a new window (right click).  
-- Diagnostic data collection from kyma clusters is done with both Kyma CLI and several Terraform providers, namely:
+- For the best experience, please open workflow links into a separate tab or into a new window (right click).  
+- Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
   * SAP BTP TF provider
   * kubernetes provider 
   * kubectl provider
-- The pre-configured CI/CD workflows are to be manually triggered. They come in two flavors, as:
-  * admin (cluster-wide) and 
-  * students (namespaced) automation flows:
+- The pre-configured CI/CD automation workflows are to be manually triggered. They come in two flavors, as:
+  * admin (cluster-wide)
+  * students (namespaced) flows:
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -125,13 +126,13 @@ Good to know:
 
 Good to know: 
 - The security is paramount!
-- The automated workflows leverage the dynamic OIDC credentials with Github Actions acting as the IDP provider. 
-- Thus, there is no need to rely on static credentials or use any vault
-- The implemented mechanism ensure the credentials are rotated automatically which makes is suitable for long running pipelines as well.
+- The automated workflows leverage the dynamic OIDC credentials with Github Actions acting as the IDP provider in the context of a running job. 
+- Thus, there is no need to rely on static credentials or be compelled to use a vault.
+- The implemented mechanism ensures the credentials are rotated automatically which makes is suitable for long running pipelines as well.
 
 
 Homework:
-- Think about nny additional information you might like to add or amend...
+- Think about nny additional cluster information you might like to add or amend...
 
 ## Exercise 1.3 - Zoom on Kyma CLI
 
