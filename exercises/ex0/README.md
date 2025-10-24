@@ -49,17 +49,8 @@ This step is optional and you can be use instead any existing personal GitHub ac
 
 ## Exercise 0.2 - The rules of the game
 
-- The students can pick and choose any available kyma cluster region from the following list:
 
-| Account Name              | Type        |                                                                                                                                Description |
-| :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
-| us-east               |  US EAST region  | Students runtime context with kyma environment in the us east region         |
-| uk-south                  |  UK SOUTH region | Students runtime contexts with kyma environment in the uk south region         |
-| japan-east                |  JAPAN EAST region | Students runtime contexts with kyma environment in the japan east region         |
-
-
-
-- Access to the landscape via Easy Navigation dashboard:  
+Access to the landscape via Easy Navigation dashboard:  
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -73,6 +64,19 @@ This step is optional and you can be use instead any existing personal GitHub ac
 </tbody>
 </table>  
 
+The students can pick and choose any available kyma cluster region from the following list:
+
+| Account Name              | Type        |                                                                                                                                Description |
+| :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
+| us-east               |  US EAST region  | Students runtime context with kyma environment in the us east region         |
+| uk-south                  |  UK SOUTH region | Students runtime contexts with kyma environment in the uk south region         |
+| japan-east                |  JAPAN EAST region | Students runtime contexts with kyma environment in the japan east region         |
+| xp264-00               |  UK SOUTH region  | Students runtime context with kyma environment in the us east region         |
+| xp264-001                  |  EU Central region | Students runtime contexts with kyma environment in the eu central region         |
+| xp264-050                |  JK SOUTH region | Students runtime contexts with kyma environment in the uk south region        |
+
+
+
 
 Good to know: 
 - Each cluster has been configured to the same template with dedicated namespaces for each student.
@@ -80,7 +84,7 @@ Good to know:
  
 Furthermore:
 - The students do not have access to the master components of the landscape. 
-- Any shared infrascture access required for the session is granted via SSO with the links available from the Easy Navigation site.
+- Any shared asset access required for the session is granted via SSO with the links available from the Easy Navigation site.
 
 | Account Name              | Type        |                                                                                                                                Description |
 | :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
