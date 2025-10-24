@@ -108,13 +108,9 @@ sequenceDiagram
 
 - 👉 For the best experience, do open workflow links into a separate tab or into a new window (right click).  
 
-- Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
-  * SAP BTP TF provider
-  * kubernetes provider 
-  * kubectl provider
 - The pre-configured CI/CD automation workflows are to be manually triggered. They come in two flavors, as:
   * admin (cluster-wide)
-  * students (namespaced) flows:
+  * students (namespaced) flows as depicted below:
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -136,7 +132,12 @@ sequenceDiagram
 </tbody>
 </table> 
 
-  * diagnostic data (namespaced) flow
+- Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
+  * SAP BTP TF provider
+  * kubernetes provider 
+  * kubectl provider
+
+- diagnostic data (namespaced) flow
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -163,9 +164,8 @@ Good to know:
 - The implemented mechanism ensures the credentials are rotated automatically which makes is suitable for long running pipelines as well.
 
 What is happening ?
-  -------------
-  These workflows automatically:  
 
+- These workflows automatically: 
   - 🔐 use GitHub's OIDC token for secure authentication
   - ⚙️ set up your Kubernetes context (kubeconfig)
   - 🚀 enable you to run kubectl commands in your workflow
