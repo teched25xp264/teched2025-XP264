@@ -80,11 +80,11 @@ A GitHub Action that securely connects to Kubernetes clusters using OpenID Conne
 
 What does this action do?
 -------------
-This action automatically:
+This action automatically:  
 
- 🔐 Uses GitHub's OIDC token for secure authentication
- ⚙️ Sets up your Kubernetes context (kubeconfig)
- 🚀 Enables you to run kubectl commands in your workflow
+- 🔐 Uses GitHub's OIDC token for secure authentication
+- ⚙️ Sets up your Kubernetes context (kubeconfig)
+- 🚀 Enables you to run kubectl commands in your workflow
 
 **Benefits:**
 

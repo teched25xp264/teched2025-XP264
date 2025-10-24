@@ -46,10 +46,10 @@ The requirements to follow the exercises in this repository are...
 
 - As the session content is delivered exclusively on SAP-Samples github, many excercises have been implemented as [Github Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) (GHA). 
 - There is no need to provide kubernetes and/or btp credentials when using the [github actions OIDC](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 
-  - The Github Action workflows acting as the [OIDC provider](https://docs.github.com/en/actions/concepts/security/openid-connect). 
-  - All the kubernetets environments in the landscape come with the pre-configured OIDC applications.
-  - SAP Cloud Identity Services acting as a platform IDP on the BTP side of the house has been federated with the Github actions OIDC Provider
-  - As a result, the very short-lived [credentials](https://docs.github.com/en/actions/concepts/security/openid-connect#understanding-the-oidc-token) are being fetched and rotated automatically on the behalf of the repository user for both kubernetes and btp platform operations.
+  - ✅ The Github Action workflows acting as the [OIDC provider](https://docs.github.com/en/actions/concepts/security/openid-connect). 
+  - ✅ All the kubernetets environments in the landscape come with the pre-configured OIDC applications.
+  - ✅ SAP Cloud Identity Services acting as a platform IDP on the BTP side of the house has been federated with the Github actions OIDC Provider
+  - ✅ As a result, the very short-lived [credentials](https://docs.github.com/en/actions/concepts/security/openid-connect#understanding-the-oidc-token) are being fetched and rotated automatically on the behalf of the repository user for both kubernetes and btp platform operations.
 - The good news is you may run the GHA-based exercises directly from any browser from your forked repository on the provided teched laptop.
 - Take time to inspect the results of the built-in automations. Ask questions. And if you feel like, go ahead and create your own automation variants as well.
 - The recommendation is, however, to go with the flow of the exercises, inspect the results, ask questions and leave the rest for the homework.
