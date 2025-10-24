@@ -95,14 +95,12 @@ You've got SSO acces with your student's credentials to parts of the SAP-TechEd2
 You may login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec) 
 
 
-- The BTP landscape has a number of subaccounts or runtime contexts.  
-- Most of the runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
-- However, there are a few in the EU10 data center (AWS/Francfort) as well.
+- The BTP landscape has a number of subaccounts or **runtime contexts**.  
+- The majority of runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
+- However, there are a few hosted in the EU10 data center (AWS/Francfort) as well.
 - Each BTP subaccount can host a single kyma runtime environment.
 - Each kyma runtim environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
 - Please note the kyma cluster region may be different from the BTP subaccount region.
-
-
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
