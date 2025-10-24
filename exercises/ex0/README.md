@@ -75,6 +75,20 @@ This step is optional and you can be use instead any existing personal GitHub ac
 
 ### The rules of the game
 
+- Access to the landscape via Easy Navigation dashboard:  
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="site_navigation" height="800"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table>  
+
 - The students can pick and choose any available kyma cluster region from the following list:
 
 | Account Name              | Type        |                                                                                                                                Description |
@@ -98,21 +112,8 @@ This step is optional and you can be use instead any existing personal GitHub ac
  
 - Each cluster has been configured to the same template with dedicated namespaces for each student.
 - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
-- Last but not least, all students have accees to the Easy Navigation dashboard, namely:  
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="site_navigation" height="800"/></a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table>   
-
-
+ 
+Furthermore:
 - The students do not have access to the master components of the landscape. 
 - Any shared infrascture access required for the session is granted via SSO with the links available from the Easy Navigation site.
 
