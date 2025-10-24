@@ -92,8 +92,8 @@ sequenceDiagram
 <div>
 
 - The pre-configured CI/CD automation workflows are to be manually triggered. They come in two flavors, namely:
-  * admin (cluster-wide)
-  * students (namespaced) flows as depicted below:
+  * admin (cluster-wide) flow
+  * students (namespaced) flow
 
 | Kyma Region (BTP Cockpit) |  Console (dashboard) | Admin Worklow (cluster-wide) | Student Workflow (namespaced)| Data Collection Workflow (namespaced)
  | :---------  | --------- | :--------- | :------- | -----------
@@ -103,6 +103,7 @@ sequenceDiagram
  | [xp264-000](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec/subaccount/20b6061c-64aa-4397-bc01-df7348704173) | [<img src="../landscape/xp264-000/kyma_dashboard_url_xp264_000.png" width="75" />](https://dashboard.kyma.cloud.sap/?kubeconfigID=B427F082-0D0C-4657-9D99-56629CC03CF6 ) | [xp264-000--admin](../../../../actions/workflows/xp264-000-teched-622af3fe-a2f5-4fdd-a05f-73e343aec2a5.yml) | [xp264-000--xp264](../../../../actions/workflows/xp264-000-teched-622af3fe-a2f5-4fdd-a05f-73e343aec2a5-xp264.yml) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
  | [uk-xp264]() | [<img src="../landscape/uk-xp264/kyma_dashboard_url_uk_xp264.png" width="75" />](https://dashboard.kyma.cloud.sap/?kubeconfigID=0FD84322-535C-4047-89CE-47FC775938FC ) | [uk-xp264--admin](../../../../actions/workflows/uk-xp264-teched-76f46b5b-d9ab-486f-8e4f-12e1163af943.yml) | [uk-xp264--xp264](../../../../actions/workflows/uk-xp264-teched-76f46b5b-d9ab-486f-8e4f-12e1163af943-xp264.yml) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
 
+- 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
 </div>  
 </td>
 </tr>
@@ -110,12 +111,11 @@ sequenceDiagram
 </table>  
 
 
-- 👉 For the best experience, do open workflow links into a separate tab or into a new window (right click).  
-
 Explanation. What happened?
-- The pre-configured CI/CD automation workflows are to be manually triggered. They come in two flavors, namely:
-  * admin (cluster-wide)
-  * students (namespaced) flows as depicted below:
+----------
+- You have manually triggered the pre-configured CI/CD automation workflows.
+- Workflows execution is divided into steps. Each step represents a dedicated task.
+- 👉 Inspect the steps of each of the worklow you have run, as depicted below
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -132,16 +132,25 @@ Explanation. What happened?
 </p>
 </a></h1>
 </div>
+
+<div>
+  - diagnostic data (namespaced) flow
+<h1><a href="https://dashboard.kyma.cloud.sap/?kubeconfigID=79EB720B-2C16-4A7E-AA7F-108C4E3B7E98">
+<p float="left">
+  <img src="../ex1/images/k8s-data-context-student.png" width="450" height="600"/>
+  <img src="../ex1/images/k8s-data-context-student-summary.png" width="450" height="600"/> 
+  <img src="../ex1/images/k8s-data-context-student-details.png" height="800"/> 
+</p>
+</a></h1>
+</div>
+
 </td>
 </tr>
 </tbody>
 </table> 
-They feature a number of steps. Each step represents a dedicated task.
 
-- Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
-  * SAP BTP TF provider
-  * kubernetes provider 
-  * kubectl provider
+
+
 
 - diagnostic data (namespaced) flow
 
@@ -162,6 +171,12 @@ They feature a number of steps. Each step represents a dedicated task.
 </tr>
 </tbody>
 </table> 
+
+Good to know:
+- Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
+  * SAP BTP TF provider
+  * kubernetes provider 
+  * kubectl provider
 
 Good to know: 
 - The security is paramount!
