@@ -79,9 +79,9 @@ These automations are like fuel to your kubernetes engines and environments
 
 
 
-👉 Do it out yourself...
-👉 Pick a region and action of your choice...
-👉 Have fun...
+- 👉 Do it out yourself...
+- 👉 Pick a region and action of your choice...
+- 👉 Have fun...
 
 
 <style>
@@ -95,6 +95,8 @@ These automations are like fuel to your kubernetes engines and environments
         text-align: center;
     }
     .heatMap tr:nth-child(1) { background: red; }
+    .heatMap tr:nth-child(2) { background: orange; }
+    .heatMap tr:nth-child(3) { background: green; }
     .heatMap tr:nth-child(2) { background: orange; }
     .heatMap tr:nth-child(3) { background: green; }
 </style>
