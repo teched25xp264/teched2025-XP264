@@ -84,17 +84,12 @@ These automations are like fuel to your kubernetes engines and environments
 - 👉 Have fun...
 
 ```mermaid
-architecture-beta
-    group api(cloud)[API]
+sequenceDiagram
+    Kyma Region (BTP Cockpit) ->> Admin Worklow (cluster-wide): Hello Bob, how are you?
+    Admin Worklow (cluster-wide)-->>Student Workflow (namespaced): How about you John?
+    Student Workflow (namespaced)--x Data Collection Workflow (namespaced): I am good thanks!
 
-    service db(database)[Database] in api
-    service disk1(disk)[Storage] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Server] in api
 
-    db:L -- R:server
-    disk1:T -- B:server
-    disk2:T -- B:db
 
 ```
 
