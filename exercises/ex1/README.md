@@ -115,14 +115,14 @@ Explanation. What happened?
 ----------
 - You have manually triggered the pre-configured CI/CD automation workflows.
 - Workflows execution is divided into steps. Each step represents a dedicated task.
-- 👉 Inspect the steps of each of the worklow you have run, as depicted below
-
+- 👉 Inspect the steps of each of the worklow you have run, as depicted below:
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
+  - admin and students flows
 <h1><a href="https://dashboard.kyma.cloud.sap/?kubeconfigID=79EB720B-2C16-4A7E-AA7F-108C4E3B7E98">
 <p float="left">
   <img src="../ex1/images/japan-east--admin.png" width="450" height="600"/>
@@ -149,28 +149,6 @@ Explanation. What happened?
 </tbody>
 </table> 
 
-
-
-
-- diagnostic data (namespaced) flow
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="https://dashboard.kyma.cloud.sap/?kubeconfigID=79EB720B-2C16-4A7E-AA7F-108C4E3B7E98">
-<p float="left">
-  <img src="../ex1/images/k8s-data-context-student.png" width="450" height="600"/>
-  <img src="../ex1/images/k8s-data-context-student-summary.png" width="450" height="600"/> 
-  <img src="../ex1/images/k8s-data-context-student-details.png" height="800"/> 
-</p>
-</a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table> 
 
 Good to know:
 - Diagnostic data collection from kyma clusters is done using both Kyma CLI and with several Terraform providers, namely:
