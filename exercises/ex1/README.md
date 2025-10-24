@@ -77,12 +77,13 @@ Do it yourself...
 <td style="width: 71.6%; height: 193px;">
 
 <div>
+--------
 
 - The pre-configured CI/CD automation workflows are to be manually triggered. 
 - They come as:
   * admin (cluster-wide) 
   * students (namespaced)   
-  * data clollection (namespaced) flows.
+  * data collection (namespaced) workflows.
 
 ```mermaid
 sequenceDiagram
