@@ -44,11 +44,11 @@ The requirements to follow the exercises in this repository are...
   * You need to fork the repository. Thus, you may need to have a GitHub user.
   If you haven't got one yet, please [sign-up](exercises/ex0#exercise-00---sign-up-for-a-new-github-account) on GitHub before the workshop.
 
-  * Additional software tools are pre-installed on your SAP TECHED 2025 Client laptops  
+  * Additional software tools (are pre-installed on your SAP TECHED 2025 Client laptops)  
     
-  kubectl plugins | install [jq](https://jqlang.org/download/) | [Kyma CLI for SAP BTP, Kyma Runtime](https://tools.hana.ondemand.com/#cloud) |
-  -- | -- | -- |
-  install [krew.exe](https://github.com/kubernetes-sigs/krew/releases/download/v0.4.5/krew.exe) | install jq with `winget install jqlang.jq` | install [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
+  kubectl plugins | jq | [Kyma CLI for SAP BTP, Kyma Runtime] |
+  -- | :--: | -- |
+  install [krew.exe](https://github.com/kubernetes-sigs/krew/releases/download/v0.4.5/krew.exe) | install jq with `winget install jqlang.jq` | download [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
   installing the oidc-login plugin | |
   install view-serviceaccount-kubeconfig plugin | |
 
