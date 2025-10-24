@@ -47,7 +47,7 @@ This step is optional and you can be use instead any existing personal GitHub ac
  - Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
  - Choose **Activate Github Action**
 
-## Exercise 0.2 - Discover SAP-TechEd25-XP264 Business Technology Platform landscape
+## Exercise 0.2 - Discover SAP-TechEd25-XP264 session landscape
 
 - Login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec) with your allocated student's credentials (SSO)
 
