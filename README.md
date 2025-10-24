@@ -82,9 +82,7 @@ The requirements to follow the exercises in this repository are...
     C:\Users\TE-06\.krew\bin\kubectl-resource_capacity.exe
     C:\Users\TE-06\.krew\bin\kubectl-view_serviceaccount_kubeconfig.exe 
     ``` 
-  - jq 
-  - curl
-  - [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
+  - jq, curl. [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
 
 
 
