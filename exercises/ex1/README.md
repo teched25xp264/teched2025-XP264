@@ -75,14 +75,13 @@ They come in three different flavors, namely as:
 * data collection (namespaced) workflows.
 
 <table style="width: 100%; height:800; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<a href="https://docs.github.com/en/actions/get-started/understand-github-actions"></a>
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-Let's have a look at the building blocks (steps) of github action workflows:
+Let's have a look at the common building blocks (steps) of a github action workflow:
 <p float="left">  
-<h1><a href="https://docs.github.com/en/actions/get-started/understand-github-actions"></a></h1>
-
 
 ```mermaid
 graph TD
