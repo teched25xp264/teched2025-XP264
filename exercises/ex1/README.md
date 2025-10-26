@@ -79,7 +79,7 @@ They come in three different flavors, namely as:
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-- 👉 Let's have a look at the common building blocks (steps) of a github action workflow
+👉 Let's have a look at the common building blocks (steps) of a github action workflow
 <p float="left">  
 
 ```mermaid
