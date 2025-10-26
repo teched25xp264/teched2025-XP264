@@ -132,7 +132,7 @@ sequenceDiagram
 title: Hello Title
 config:
   theme: base
-  "securityLevel": "loose"
+  securityLevel: loose
   themeVariables:
     primaryColor: "#00ff00"
 ---
