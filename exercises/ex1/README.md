@@ -70,16 +70,16 @@ In this exercise you will:
 
 The pre-configured CI/CD automation workflows are to be manually triggered. 
 They come in three different flavors, namely as:
-* admin (cluster-wide) 
-* students (namespaced)   
-* data collection (namespaced) workflows.
+* admin workflows (cluster-wide) 
+* students workflows (namespaced)   
+* data collection workflows (namespaced).
 
 <table style="width: 100%; height:800; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
-<div>
-Let's have a look at the common building blocks (steps) of a [github action workflow](https://docs.github.com/en/actions/get-started/understand-github-actions):
+<div className="content" href=https://docs.github.com/en/actions/get-started/understand-github-actions >
+Let's have a look at the common building blocks (steps) of a github action workflow]:
 <p float="left">  
 
 ```mermaid
@@ -89,6 +89,8 @@ graph TD
     C[Install helm] -- create kubeconfig with dynamic credentials --> D
     D(Setup Kube Context) -- kubeconfig permissions check --> E
     E(check permissions) -- the belows steps may differ from one worklow to another --> F(Other steps)
+
+    click B "http://www.github.com" "This is a tooltip for a link" _blank
 ```
 </p>
 </div>
