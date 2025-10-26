@@ -51,7 +51,7 @@ Some of the modules are added by default (istio, api-gateway and btp-operator), 
 </tr>
 </tbody>
 </table>   
-
+  
 
 ## Exercise 1.2 - Built-in github actions automation flows
 
@@ -79,7 +79,7 @@ They come in three different flavors, namely as:
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-Let's have a look at the common building blocks (steps) of a [github action workflow]("https://docs.github.com/en/actions/get-started/understand-github-actions"):
+Let's have a look at the common building blocks (steps) of a [github action workflow](https://docs.github.com/en/actions/get-started/understand-github-actions):
 <p float="left">  
 
 ```mermaid
