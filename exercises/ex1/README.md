@@ -28,6 +28,18 @@ Some of the modules are added by default (istio, api-gateway and btp-operator), 
 <td style="width: 71.6%; height: 193px;">
 <div>
 <h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/skr.drawio.svg" alt="" height="600"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table> 
+
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
 
 ```mermaid 
 
@@ -70,7 +82,6 @@ sequenceDiagram
 </tr>
 </tbody>
 </table> 
-
 
 ## Exercise 1.1 - Easy access to your teched landscape with SSO.
 
