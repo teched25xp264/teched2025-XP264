@@ -74,14 +74,14 @@ They come in three different flavors, namely as:
 * students (namespaced)   
 * data collection (namespaced) workflows.
 
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<table style="width: 100%; height:800; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
 Let's have a look at the building blocks (steps) of github action workflows:
 <p float="left">  
-<h1><a href="https://docs.github.com/en/actions/get-started/understand-github-actions"><img class="aligncenter" src="" alt="github action worflow steps" height="800"/></a></h1>
+<h1><a href="https://docs.github.com/en/actions/get-started/understand-github-actions"></a></h1>
 
 
 ```mermaid
