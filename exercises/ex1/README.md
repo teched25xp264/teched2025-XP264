@@ -79,8 +79,9 @@ They come in three different flavors, namely as:
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
+Let's have a look at the building blocks (steps) of github action workflows:
 <p float="left">  
-<h1><a href="https://docs.github.com/en/actions/get-started/understand-github-actions"><img class="aligncenter" src="exercises/ex1/images/engine_fuel.jpg" alt="kyma stack" height="800"/></a></h1>
+<h1><a href="https://docs.github.com/en/actions/get-started/understand-github-actions"><img class="aligncenter" src="../ex1/images/engine_fuel.jpg" alt="github action worflow steps" height="800"/></a></h1>
 
 
 ```mermaid
