@@ -24,7 +24,7 @@ All these clusters are managed by a central Kyma Control Plane (KCP) that orches
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
-<div>
+<div style="height: 600px;">
 
 
 ```mermaid
