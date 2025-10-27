@@ -266,9 +266,11 @@ Time to do it yourself...
 <div>
 
 ```mermaid
+
 ---
 config:
-  theme: classic
+  theme: redux-color
+  look: classic
 title: 'Github automation workflow per category: admin, student, data'
 ---
 sequenceDiagram
@@ -277,11 +279,16 @@ sequenceDiagram
   participant admin as Admin Worklow (cluster-wide)
   participant student as Student Workflow (namespaced)
   participant data as Data Collection Workflow (namespaced)
-  btp -->> admin: cluster-wide automation
-  btp -->> student: namespaced automation
-  btp -->> data: cluster diagnostic ckeck
-  Note left of btp: Pick a region<br/>and action<br/>of your choice.
-  Note over admin,student: Choose a workflow<br/>and open it<br/>with the right click.
+  rect rgb(191, 223, 255)
+    me ->> admin: pick the worflow
+    me -->> admin: cluster-wide automation
+    me -->> student: namespaced automation
+    me -->> data: cluster diagnostic ckeck
+    Note over me: Pick an automation workflow<br/>for a regionn<br/>of your choice.
+    Note over admin, data: Choose a workflow<br/>and open it<br/>with the right click.
+  end
+
+
 ```
 
 </div>
