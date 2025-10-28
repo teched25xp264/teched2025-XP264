@@ -68,8 +68,8 @@ flowchart TD
 The requirements to follow the exercises in this repository are...
 
 - 👉 You must be able to fork the repository and activate the github actions at the fork.  This is mandatory for this session!
-  Thus, you may need a GitHub user.  
-  If you haven't got one yet, please [sign-up](exercises/ex0#exercise-00---sign-up-for-a-new-github-account) on GitHub before the workshop or at the very beginning of the session.
+- 👉 Thus, you may need a GitHub user.  
+- 👉 If you haven't got one yet, please [sign-up](exercises/ex0#exercise-00---sign-up-for-a-new-github-account) on GitHub before the workshop or at the very beginning of the session.
 
 - The session content is provided *exclusively* on the SAP-Samples github, and many excercises have been implemented as CI/CD [Github Actions worflows](https://docs.github.com/en/actions/get-started/understand-github-actions) (GHA). 
 - Security is paramount. With this, there is no more need to provide kubernetes and btp credentials when using those [github actions](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 

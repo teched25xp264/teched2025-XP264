@@ -6,10 +6,11 @@ You must have a personal github account for this session.
 ## Exercise 0.0 - Sign up for a new GitHub account
 
 - 👉 You must be able to fork the repository and activate the github actions at the fork.  
-  This is mandatory to follow the exercises in this session!
+  This is mandatory in order to be able to follow the exercises in this session!
 
   Thus, you may need a GitHub user.  
-  If you haven't got one yet, please sign up following the instructions below:
+  If you haven't got one yet, please sign up following the instructions below.
+  Othersie go to Exercise 0.1 - Fork the teched2025-XP264 repository.
 
 - 👉 Navigate to [GitHub](https://github.com/).
 - 👉 Click **Sign up for GiHhub**.
@@ -18,7 +19,7 @@ You must have a personal github account for this session.
 
 ## Exercise 0.1 - Fork the teched2025-XP264 repository.
 
-This is mandatory to run the session exercises which are implemented as github actions.
+This is mandatory to be able to run the session exercises which are implemented as github actions.
 
  - 👉 Login to [GitHub](https://github.com/).
  - 👉 On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
