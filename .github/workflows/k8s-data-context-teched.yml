@@ -424,7 +424,10 @@ env:
 
         echo "kubeconfig base64 encoded as string"
         kymaruntime_kubeconfig_base64=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output kymaruntime_kubeconfig_base64)
-        echo "kymaruntime_kubeconfig_base64=$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
+        echo 'kymaruntime_kubeconfig_base64<<EOF' >> $GITHUB_OUTPUT
+        echo "$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
+        echo 'EOF' >> $GITHUB_OUTPUT
+        #echo "kymaruntime_kubeconfig_base64=$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
 
 
         ls -al $CONFIG_DIRECTORY
