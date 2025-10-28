@@ -411,8 +411,11 @@ env:
 
         kubeconfig_sa=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -raw kubeconfig-sa)
         terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -json kyma_parameters > ./tf_output.json
+
         kyma_parameters=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -json kyma_parameters | jq -R)
-        echo "kyma_parameters=$kyma_parameters" >> $GITHUB_OUTPUT
+        echo 'kyma_parameters<<EOF' >> $GITHUB_OUTPUT
+        echo "$kyma_parameters" >> $GITHUB_OUTPUT
+        echo 'EOF' >> $GITHUB_OUTPUT
 
         ls -al $CONFIG_DIRECTORY
         cat $CONFIG_DIRECTORY/cis-secret.json
@@ -421,6 +424,13 @@ env:
         RUNTIME_CONTEXT_WORKSPACE: "runtime-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
         RUNTIME_WORKSPACE: "k8s-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
         PROVIDER_WORKSPACE: "provider-context-${{steps.cluster_info.outputs.GLOBALACCOUNT}}" 
+
+    - name: Show kyma_parameters
+      run: |
+        echo "${{ steps.terraform_output.outputs.kyma_parameters }}" > ./my-kyma_parameters.yaml
+        cat ./my-kyma_parameters.yaml 
+
+
 
 #    - name: Convert JSON to HTML Table
 #      uses: Teebra/JSON-to-HTML-table@v2.0.0
