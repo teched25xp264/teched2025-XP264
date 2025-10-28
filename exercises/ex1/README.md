@@ -1,5 +1,6 @@
-# Exercise 1 - First things first. Getting acquainted with SAP BTP, Kyma Runtime (SKR)
+# Exercise 1 - First things first. Day-2 with SAP BTP, Kyma Runtime
 
+Day-2 Operations include: Management, Maintenance, Monitoring, and Optimization
 
 ## Exercise 1.1 - Easy access to your teched landscape with SSO.
 
