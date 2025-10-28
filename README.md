@@ -72,13 +72,14 @@ The requirements to follow the exercises in this repository are...
   If you haven't got one yet, please [sign-up](exercises/ex0#exercise-00---sign-up-for-a-new-github-account) on GitHub before the workshop or at the very beginning of the session.
 
 - The session content is provided *exclusively* on the SAP-Samples github, and many excercises have been implemented as CI/CD [Github Actions worflows](https://docs.github.com/en/actions/get-started/understand-github-actions) (GHA). 
-- Security is paramount. With this, there is no more need to provide kubernetes and/or btp credentials when using those [github actions](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 
+- Security is paramount. With this, there is no more need to provide kubernetes and btp credentials when using those [github actions](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 
   - ✅ The Github Action workflows acting as the [OIDC provider](https://docs.github.com/en/actions/concepts/security/openid-connect). 
   - ✅ All the kubernetets environments in the landscape are configure to trust GitHub’s token identity provider. They come with the pre-configured OIDC applications leveraging the built-in OIDC shoot extension.
   - ✅ SAP Cloud Identity Services acting as a platform IDP on the BTP side of the house has been federated with the Github actions OIDC Provider
   - ✅ As a result, the very short-lived [credentials](https://docs.github.com/en/actions/concepts/security/openid-connect#understanding-the-oidc-token) are being fetched and rotated automatically on the behalf of the repository user for both kubernetes and btp platform operations.
 
-- The good news is you may run the **GHA-based exercises** directly from any browser from your forked repository on the provided teched laptop.
+- The good news is you may run the **GHA-based exercises** directly, from your forked repository, in a browser on the **provided** teched laptop.
+- Personal devices should not be used for this session.
 
 - 👉 Run and take time to inspect the results of the built-in automations. Ask questions. And if you feel like doing, go ahead and create your own variants as well.
 - 👉 The recommendation is, however, to go with the flow of the exercises, inspect the results, ask questions and leave the rest for the homework.
