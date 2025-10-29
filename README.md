@@ -70,7 +70,7 @@ flowchart TD
 </table> 
 
 
-### During the session you will learn
+### During the session you will learn...
 
   * how to operate applications with SAP BTP, Kyma runtime and discover the power of smooth integration with cloud applications and on-premise systems using the advanced connectivity features.  
   * to explore operational best practices from mastering troubleshooting techniques and intelligent root-cause analysis to event-driven autoscaling that adapts to your business needs in real time.
@@ -101,15 +101,16 @@ The requirements to follow the exercises in this repository are...
 > - However, the good news is you may run the **GHA-based exercises** directly, from your forked repository, in a browser on the **provided** teched laptops.
 
 > [!TIP]
-> Session directions.  
-> The session is pretty packed with content.  To make the best use of your time you may want to follow the below tips.
+> **Session directions.**  
+>
+> The session is pretty packed with content.  To make the best use of your time you may want to follow the below tips.  
 > - 👉 Run and take time to inspect the results of the built-in automations. Ask questions. And if you feel like doing, go ahead and create your own variants as well.
 > - 👉 The recommendation is, however, to go with the flow of the exercises, inspect the results, ask questions and leave the rest for the homework.
 >
-> - For all other exercises which may require a terminal use, you may use the built-in VSCode terminal window.
+> - For all other exercises which may require a terminal use, you may use the VSCode integrated terminal.
 
 > [!NOTE]
-> - As this is a Day-2 operation brief, the entire cloud landscape has been pre-configured with a number of shared components, for instance:  
+> - As this is the Day-2 operation brief, the entire cloud landscape has been pre-configured with a number of shared components, namely:  
 >  - 🔗 SAP Cloud Identity Services (SAP IAS)  
 >  - 🔗 SAP Cloud Logging  
 >  - 🔗 SAP HANA Cloud  
@@ -119,9 +120,9 @@ The requirements to follow the exercises in this repository are...
 >
 > - All of the SAP Kyma environments have been configured to the same template (via terraform automation).  
 >
-> - Last but not least, you will be able to *play* with a SAP Build multitenant application pre-deployed to one of the kyma provider clusters.   
+> - Last but not least, you will be able to *play* with a SAP Build multi-tenant application pre-deployed to one of the kyma provider clusters.   
 
-- :notebook: FYI: There are several additional command line tools available on your SAP TECHED 2025 Client laptops, for instance:  
+- :notebook: FYI: There are several additional command line tools available on your SAP TECHED 2025 Client laptops, namely:  
     
   - kubectl plugin list
     ```
