@@ -87,7 +87,6 @@ The students can pick and choose any available kyma cluster region the following
 
 
 > [!NOTE]
-> Good to know: 
 > - Each cluster has been configured to the same template with dedicated namespaces for each student.
 > - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
 > 
@@ -104,13 +103,13 @@ You've got SSO acces with your student's credentials to parts of the SAP-TechEd2
 For instance, you may login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec) 
 
 
-Good to know:  
-- The BTP landscape has a number of subaccounts or **runtime contexts**.  
-- The majority of runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
-- However, there are a few hosted in the EU10 data center (AWS/Francfort) as well.
-- Each BTP subaccount can host a single kyma runtime environment.
-- Each kyma runtime environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
-- Please note the kyma cluster region may be different from the BTP subaccount region.
+> [!NOTE]
+> - The BTP landscape has a number of subaccounts or **runtime contexts**.  
+> - The majority of runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
+> - However, there are a few hosted in the EU10 data center (AWS/Francfort) as well.
+> - Each BTP subaccount can host a single kyma runtime environment.
+> - Each kyma runtime environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
+> - Please note the kyma cluster region may be different from the BTP subaccount region.
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -125,7 +124,7 @@ Good to know:
 </table>   
 
 
-Furthermore, each student's runtime context has a preconfigured SAP Cloud Connector attached, for instance:
+Furthermore, each student's runtime context features a preconfigured SAP Cloud Connector attached, for instance:
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
