@@ -11,8 +11,7 @@ The Kubernetes landscape lifecycle is divided into so-called routines or days, n
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-Day-2 Operations include: 
- - Management, Maintenance, Monitoring, and Optimization
+Day-2 Operations: Management, Maintenance, Monitoring, and Optimization
 
 ```mermaid
 ---
