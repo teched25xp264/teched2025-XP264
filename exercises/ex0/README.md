@@ -56,7 +56,9 @@ This is mandatory to be able to run the session exercises which are implemented 
 
 ## Exercise 0.2 - The rules of the game
 
-Access to the solution landscape is provided via the Easy Navigation dashboard:  
+Access to the solution landscape is provided via the Easy Navigation dashboard.  
+> [!TIP]
+> 👉 For the best experience, use the rgit click to open the dashboard into a separate tab or into a new window
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
