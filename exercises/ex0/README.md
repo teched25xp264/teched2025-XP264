@@ -92,7 +92,7 @@ The students can pick and choose any available kyma cluster region the following
 > 
 > Furthermore:
 > - The students do not have access to the master components of the landscape. 
-> - Any shared component access required for the session is granted via SSO with the links available from the Easy Navigation site.
+> - Any shared component access required for the session is granted via SSO with the links available from the [Easy Navigation site](https://url.sap/3kf0ol).
 
 
 
@@ -233,6 +233,6 @@ Now that you have everything you need to successfully go through this TechEd ses
 - A GitHub account.
 - Your own fork of the session's GitHub repository.
 - Access to the SAP BTP managed kubernetes landscape with the easy navigation site
-- An idea of the landscape architecture behind the solution brief
+- An idea of the BTP landscape architecture behind the solution brief
 
 Continue to [First things first. Day-2 with SAP managed kubernetes runtime](../ex1/README.md)
