@@ -304,6 +304,15 @@ env:
         kubectl autoscale function faas-srv -n $NAMESPACE --cpu-percent=50 --min=5 --max=10 || true
         kubectl get hpa -n $NAMESPACE || true
         kubectl get hpa faas-srv -n $NAMESPACE || true
+        echo "Wait until HPA is ready"
+        kubectl wait hpa faas-srv -n $NAMESPACE --for=jsonpath='{.status.state}=Ready' --timeout=60s
+
+    - "name": "scale back to a single replica."
+      "run": |
+        echo -e "how this is to be done ? In order to scale down to 1 replica just remove the HPA resource"
+        kubectl get hpa faas-srv -n $NAMESPACE || true
+        kubectl delete hpa faas-srv -n $NAMESPACE || true
+        kubectl get hpa faas-srv -n $NAMESPACE || true
 
     # GitHub Action reference: https://github.com/jupyterhub/action-k8s-namespace-report
 #    - name: Kubernetes namespace report
