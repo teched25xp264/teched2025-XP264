@@ -107,6 +107,8 @@ env:
         echo -e "display all hpas and scale objects in the namespace: $NAMESPACE..."
         kubectl get hpa -n $NAMESPACE || true
         kubectl get hpa faas-srv -n $NAMESPACE || true
+        kubectl delete hpa keda-hpa-faas-srv -n $NAMESPACE --ignore-not-found || true
+        kubectl wait --for=delete hpa/keda-hpa-faas-srv --timeout=90s
 
     - "name": "scale-out the faas-srv function to min 3 replicas"
       "run": |
@@ -123,6 +125,12 @@ env:
         echo "wait for function scale out and deployment rollout complete"
         kubectl get function faas-srv -n $NAMESPACE -o jsonpath="{.status.conditions[1]}" | jq
         kubectl wait --for=jsonpath="{.status.conditions[1].status}"=True function faas-srv -n $NAMESPACE --timeout=180s
+
+        echo "enumerate all the resource in the namespace - it may take quite some time to run"
+        kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=faas-srv -n $NAMESPACE
+
+        echo "show HPA"
+        kubectl get hpa faas-srv -n $NAMESPACE || true
 
     - "name": "scale back to a single replica."
       "run": |
