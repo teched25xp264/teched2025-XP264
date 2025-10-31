@@ -170,8 +170,6 @@ As an illustration, the cron-based scaler enables you to:
 </tbody>
 </table>
 
-## Summary
-
-You've now ...
+## Next steps
 
 Continue to - [Exercise 3 - Exploring Kyma Telemetry with SAP Cloud Logging](../ex3/README.md)
