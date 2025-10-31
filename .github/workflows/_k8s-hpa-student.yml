@@ -107,8 +107,10 @@ env:
         echo -e "display all hpas and scale objects in the namespace: $NAMESPACE..."
         kubectl get hpa -n $NAMESPACE || true
         kubectl get hpa faas-srv -n $NAMESPACE || true
-        kubectl delete hpa keda-hpa-faas-srv -n $NAMESPACE --ignore-not-found || true
-        kubectl wait --for=delete hpa/keda-hpa-faas-srv --timeout=90s
+        #kubectl delete hpa keda-hpa-faas-srv -n $NAMESPACE --ignore-not-found || true
+        #kubectl wait --for=delete hpa/keda-hpa-faas-srv --timeout=90s
+        kubectl delete scaledobject faas-srv -n $NAMESPACE || true
+        kubectl wait --for=delete scaledobject/faas-srv --timeout=90s
 
     - "name": "scale-out the faas-srv function to min 3 replicas"
       "run": |
