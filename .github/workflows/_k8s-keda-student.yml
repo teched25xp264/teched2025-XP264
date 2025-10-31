@@ -132,12 +132,18 @@ env:
              value: "50"
         EOF
 
-        kubectl get hpa faas-srv -n $NAMESPACE || true
+        echo "Wait until KEDA ScaleObject is ready"
+        kubectl get ScaleObject faas-srv -n $NAMESPACE || true
+        kubectl get ScaleObject faas-srv -n $NAMESPACE -o jsonpath="{.status.conditions[0]}" | jq        
+        kubectl wait --for=jsonpath="{.status.conditions[0].status}"=True ScaleObject faas-srv -n $NAMESPACE --timeout=90s
+        echo "show KEDA ScaleObject"
+        kubectl get ScaleObject faas-srv -n $NAMESPACE || true
         
-        echo "Wait until HPA is ready"
-        kubectl wait --for=condition=ScalingActive hpa faas-srv -n $NAMESPACE --timeout=90s
-        echo "show HPA"
-        kubectl get hpa faas-srv -n $NAMESPACE || true
+        echo "Wait until KEDA-HPA is ready"
+        kubectl get hpa keda-faas-srv -n $NAMESPACE || true
+        kubectl wait --for=condition=ScalingActive hpa keda-faas-srv -n $NAMESPACE --timeout=90s
+        echo "show KEDA-HPA"
+        kubectl get hpa keda-faas-srv -n $NAMESPACE || true
 
         echo "wait for function scale out and deployment rollout complete"
         kubectl get function faas-srv -n $NAMESPACE -o jsonpath="{.status.conditions[1]}" | jq
