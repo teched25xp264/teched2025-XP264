@@ -37,7 +37,7 @@ Furthermore, a dedicated load generator is to be run in a separate browser windo
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-<h1><a href=""><img class="aligncenter" src="../ex1/images/k8s-hpa-keda-load-generator.png" alt="" height="600"/></a></h1>
+<h1><a href="https://url.sap/4r4wbw"><img class="aligncenter" src="../ex1/images/k8s-hpa-keda-load-generator.png" alt="" height="600"/></a></h1>
 </div>
 </td>
 </tr>
@@ -69,7 +69,7 @@ PS. The below steps are for illustration only.
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-<h1><a href=""><img class="aligncenter" src="../ex1/images/k8s-hpa-student.png" alt="k8s-hpa-student" height="600"/></a></h1>
+<h1><a href="https://url.sap/4r4wbw"><img class="aligncenter" src="../ex1/images/k8s-hpa-student.png" alt="k8s-hpa-student" height="600"/></a></h1>
 </div>
 </td>
 </tr>
@@ -92,7 +92,7 @@ PS. The below steps are for illustration only.
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-<h1><a href=""><img class="aligncenter" src="../ex1/images/k8s-keda-student.png" alt="k8s-keda-student" height="600"/></a></h1>
+<h1><a href="https://url.sap/4r4wbw"><img class="aligncenter" src="../ex1/images/k8s-keda-student.png" alt="k8s-keda-student" height="600"/></a></h1>
 </div>
 </td>
 </tr>
@@ -136,7 +136,17 @@ PS. The below steps are for illustration only.
  | :---------  |
  | [ k8s-keda-cron-student](../../../../actions/workflows/k8s-keda-cron-student.yml)
 
-
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div> 
+<h1><a href="https://url.sap/4r4wbw"><img class="aligncenter" src="../ex1/images/k8s-keda-cron-student.png" alt="k8s-keda-cron-student" height="600"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table> 
 
 KEDA offers a broad range of scaling strategies, one of which is the **cron-based scaler**. This scaler allows you to schedule scaling actions according to the time of day, an invaluable feature for managing predictable fluctuations in workload.
 
