@@ -469,58 +469,59 @@ Practice:
 - 👉 Choose the uk-south tile or click on the provided deep link
 
 ```
-kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 ```
 or
 
 ```
-kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --time 1h  --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --time 1h  --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 ```
 
 
 > ~~~rust
-apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUQ1ekNDQWsrZ0F3SUJBZ0lSQUt3bWpnd1VwQTQ5Rkw2Mkp3Zm56Y2d3R****lGSUNBVEUtLS0tLQo=
-    server: https://api.a896778.kyma.ondemand.com
-  name: garden-kyma--a896778-external
-contexts:
-- context:
-    cluster: garden-kyma--a896778-external
-    namespace: default
-    user: kyma-cli-sa
-  name: garden-kyma--a896778-external
-current-context: garden-kyma--a896778-external
-kind: Config
-preferences: {}
-users:
-- name: kyma-cli-sa
-  user:
-    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IlRvQlNSVXRhekVNQWpLaE11SF9Ga0lrUUlCTG5ZQUV3dk9wc3Z5czJZR2MifQ.***
- ~~~
+> apiVersion: v1
+> clusters:
+> - cluster:
+>    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUQ1ekNDQWsrZ0F3SUJBZ0lSQUt3bWpnd1VwQTQ5Rkw2Mkp3Zm56Y2d3R****lGSUNBVEUtLS0tLQo=
+>    server: https://api.<shoot>.kyma.ondemand.com
+>  name: garden-kyma--<shoot>-external
+> contexts:
+> - context:
+>    cluster: garden-kyma--<shoot>-external
+>    namespace: default
+>    user: kyma-cli-sa
+>  name: garden-kyma--<shoot>-external
+> current-context: garden-kyma--<shoot>-external
+> kind: Config
+> preferences: {}
+> users:
+> - name: kyma-cli-sa
+>  user:
+>    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IlRvQlNSVXRhekVNQWpLaE11SF9Ga0lrUUlCTG5ZQUV3dk9wc3Z5czJZR2MifQ.***
+> ~~~
 
 
 ```
-kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml > ~/.kube/kubeconfig--a896778.yaml
+kyma alpha kubeconfig generate --serviceaccount kyma-cli-sa --clusterrole cluster-admin --namespace default --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml > ~/.kube/kubeconfig--<shoot>.yaml
+```
 
-
-kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-000 --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+```
+kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-000 --permanent  --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 ```
 
   * read-only access in a given namespace
 
 ```
-kyma alpha kubeconfig generate --serviceaccount kyma-cli-view-sa  --namespace default --permanent --clusterrole view --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+kyma alpha kubeconfig generate --serviceaccount kyma-cli-view-sa  --namespace default --permanent --clusterrole view --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 ```
 
   * cluster-wide read-only access
 
 ```
-kyma alpha kubeconfig generate --serviceaccount kyma-cli-view-sa  --namespace default --permanent --clusterrole view --cluster-wide --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+kyma alpha kubeconfig generate --serviceaccount kyma-cli-view-sa  --namespace default --permanent --clusterrole view --cluster-wide --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 
 
-kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-000 --permanent --clusterrole view --cluster-wide --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
+kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-000 --permanent --clusterrole view --cluster-wide --kubeconfig ~/.kube/kubeconfig--garden-kyma--<shoot>-external.yaml
 ```  
 
 
