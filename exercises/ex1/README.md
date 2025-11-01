@@ -599,74 +599,41 @@ commands will detect it and remind you to do so if necessary.
 `Switched to workspace "k8s-context-xp264-050-xp264-050".`
 
 
-- 👉 run: `terraform output`
+- 👉 run: `terraform output -json  KymaModules | jq '.[] | { name: .name, version: .version}'`
+
 ```
-KymaModules = [
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/api-gateway"
-    "name" = "api-gateway"
-    "state" = "Ready"
-    "version" = "3.2.3"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha2"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/istio"
-    "name" = "istio"
-    "state" = "Ready"
-    "version" = "1.22.1"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/btp-operator"
-    "name" = "btp-operator"
-    "state" = "Ready"
-    "version" = "1.2.19"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/serverless"
-    "name" = "serverless"
-    "state" = "Ready"
-    "version" = "1.8.4"
-  },
-  {
-    "api" = "connectivityproxy.sap.com/v1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/connectivity-proxy"
-    "name" = "connectivity-proxy"
-    "state" = "Ready"
-    "version" = "1.1.2"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/keda"
-    "name" = "keda"
-    "state" = "Ready"
-    "version" = "1.8.2"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/transparent-proxy"
-    "name" = "transparent-proxy"
-    "state" = "Ready"
-    "version" = "1.8.8"
-  },
-  {
-    "api" = "operator.kyma-project.io/v1alpha1"
-    "channel" = "regular"
-    "fqdn" = "kyma-project.io/module/telemetry"
-    "name" = "telemetry"
-    "state" = "Ready"
-    "version" = "1.49.0"
-  },
-]
+{
+  "name": "serverless",
+  "version": "1.8.3"
+}
+{
+  "name": "connectivity-proxy",
+  "version": "1.1.2"
+}
+{
+  "name": "keda",
+  "version": "1.8.2"
+}
+{
+  "name": "transparent-proxy",
+  "version": "1.8.7"
+}
+{
+  "name": "telemetry",
+  "version": "1.49.0"
+}
+{
+  "name": "api-gateway",
+  "version": "3.2.3"
+}
+{
+  "name": "istio",
+  "version": "1.21.1"
+}
+{
+  "name": "btp-operator",
+  "version": "1.2.19"
+}
 ```
 
 - 👉 Run the Data Collection Workflow
@@ -732,14 +699,15 @@ Here goes a diagram of the functional architecture of the solution
 graph TD
     %% Define tenants and applications
     subgraph "Application Layer"
-        TenantA_User[Tenant A User]
-        TenantB_User[Tenant B User]
+        TenantA_User[Tenant A Consumer]
+        TenantB_User[Tenant B Consumer]
         API_Gateway[API Gateway / Routing]
     end
 
     subgraph "Service Layer"
         Microservice(Microservice A)
     end
+
 
     %% Define the data flow
     TenantA_User -->|Request for Tenant A data| API_Gateway
