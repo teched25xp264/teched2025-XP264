@@ -191,7 +191,7 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href=""><img class="aligncenter" src="/ex0/images/Feedback.jpg" alt="feedback" /></a></h1>
+<h1><a href=""><img class="aligncenter" src="exercises/ex0/images/Feedback.jpg" alt="feedback" /></a></h1>
 </div>
 </td>
 </tr>
