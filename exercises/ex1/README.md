@@ -635,7 +635,7 @@ Then, in the terminal:
 
 
 Optional practice:  
-- 👉 In order to subscribe or to retrieve an existing subscription for your session user (xp264-0xx) run the following github action: 
+- 👉 Run Subscription workflow below to subscribe or to retrieve an existing subscription for your session user (xp264-0xx)  
 
 | Run Subscription workflow |
 | -------- | 
@@ -655,6 +655,7 @@ Optional practice:
   <img src="../ex1/images/subscription-url.png" /> 
 </p>
 
+<hr>
 
 ```mermaid
 ---
@@ -696,6 +697,7 @@ sequenceDiagram
 </tbody>
 </table> 
 
+- 👉 Login to the app  
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -707,6 +709,7 @@ sequenceDiagram
   <img src="../ex1/images/subscribed-app.png" height="800"/> 
 </p>
 
+<hr>
 
 
 ```mermaid
@@ -771,6 +774,8 @@ graph TB
 
 ### Subscription management dashboard
 
+- 👉 inspect the subscription dashboard (right click on the picture below and SSO with your session user)  
+
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
@@ -791,8 +796,9 @@ graph TB
 
 ## Summary
 
+
+- The Day-1 self-generated automation workflows templates facilitate the Day-2 operations and allow for targeted extensions of the built-in flows.  
 - The automation workflows provide ease of use with the emphasis on both security and on lowering the cost of the run with the Day-2 operations
-- The Day-1 self-generated automation workflows templates facilitate the Day-2 operations and allow for targeted extensions of the built-in flows.
 
 
 Continue to - [Exercise 2 - Use External Scalers. Keda](../ex2/README.md)
