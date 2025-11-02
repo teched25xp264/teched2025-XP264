@@ -304,6 +304,7 @@ Explanation. What has happened?
   * kubernetes provider 
   * kubectl provider
 
+Practice:  
 👉 Inspect the steps of each of the worklow you have run, for instance:
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -438,7 +439,7 @@ Practice:
 
 ## Exercise 1.4 - Fire-fighter access to your kyma cluster
 
-As usual, in case of fire, one needs well designated escape routes!  
+As always, in case of fire, one needs well designated escape routes!  
 
 There are mutliple ways to gain access to a kyma cluster in XP264 session landscape, namely:
 - from a kyma dashboard (console)
@@ -464,12 +465,11 @@ The first two methods require a kubectl oidc plugin and cannot be performed in a
 
 > [!TIP]
 > 
-> - Relying on a user-OIDC kubeconfig is not very convenient due to the periodic redirects that may cause timeouts, even if used in a terminal window.
+> Relying on a user-OIDC kubeconfig is not very convenient due to the periodic redirects that may cause timeouts, even if used in a terminal window.
 
 Practice:  
-👉 Explore:  
-- Permanent and time-boxed both namespaced and cluster wide full admin access.  
-- Permanent and time-boxed both namespaced and cluster wide read-only access.
+- 👉 Explore: Permanent and time-boxed both namespaced and cluster wide full admin access.  
+- 👉 Explore: Permanent and time-boxed both namespaced and cluster wide read-only access.
 
 
 | Run Firefighter student workflow |
@@ -489,8 +489,9 @@ Practice:
 </tbody>
 </table> 
 
-👉 Download the artifacts and upload them into an empty [kyma dashboard](https://dashboard.kyma.cloud.sap/clusters)  
-👉 Take a note of the kyma cluster region and your namespace  
+Practice:  
+- 👉 Download the artifacts and upload them into an empty [kyma dashboard](https://dashboard.kyma.cloud.sap/clusters)  
+- 👉 Take a note of the kyma cluster region and your namespace  
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -511,6 +512,7 @@ Practice:
 
 ### Accessing other diagnostic information with btp and kubernetes terraform providers....  
 
+Practice:  
 - 👉 run the namespaced Data Collection Workflow against the same kyma cluster region as done in the previous exercise (for instance, xp264-050) and your namespace  
 
  |  Data Collection Workflow (namespaced)
