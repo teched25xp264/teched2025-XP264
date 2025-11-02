@@ -658,22 +658,22 @@ flowchart LR
 
 Core Day 2 Operations Areas:
 
-Monitoring & Observability: Metrics, logs, traces, and dashboards for system health  
-Incident Management: Alerting, on-call rotations, incident response, and post-mortems  
-Capacity Management: Planning, auto-scaling, rightsizing, and quota management  
-Backup & Recovery: Automated backups, replication, DR testing, and restore procedures  
-Security Operations: Vulnerability scanning, patch management, audits, and certificate management  
-Configuration Management: Drift detection, GitOps, secret rotation, and version control  
-Performance Optimization: Tuning, caching, database optimization, and load testing  
-Cost Management: Monitoring, optimization, reserved capacity, and chargeback  
-Change Management: Change requests, deployments, rollbacks, and tracking  
-Continuous Improvement: SLO reviews, retrospectives, automation, and documentation  
+1. Monitoring & Observability: Metrics, logs, traces, and dashboards for system health  
+2. Incident Management: Alerting, on-call rotations, incident response, and post-mortems  
+3. Capacity Management: Planning, auto-scaling, rightsizing, and quota management  
+4. Backup & Recovery: Automated backups, replication, DR testing, and restore procedures  
+5. Security Operations: Vulnerability scanning, patch management, audits, and certificate management  
+6. Configuration Management: Drift detection, GitOps, secret rotation, and version control  
+7. Performance Optimization: Tuning, caching, database optimization, and load testing  
+8. Cost Management: Monitoring, optimization, reserved capacity, and chargeback  
+9. Change Management: Change requests, deployments, rollbacks, and tracking  
+10. Continuous Improvement: SLO reviews, retrospectives, automation, and documentation  
 
 The diagram also shows how different teams (SRE, DevOps, Support, Development, Security) interact with these operations and how supporting systems (ticketing, ChatOps, knowledge bases, CI/CD) enable Day 2 activities.
 
 ```mermaid
 ---
-title: Day 2 Operations - Alternative flow chart version
+title: Day 2 Operations activities
 ---
 graph TB
     subgraph "Day 2 Operations"
