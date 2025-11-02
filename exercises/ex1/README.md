@@ -510,6 +510,13 @@ Practice:
 ## Exercise 1.5 - Terraforming kyma runtime environment
 
 
+- 👉 run the namespaced Data Collection Workflow against the same kyma cluster region as done in the previous exercise (for instance, xp264-050) and your namespace
+
+ |  Data Collection Workflow (namespaced)
+ | :---------  |
+ | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+
+
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
@@ -517,7 +524,7 @@ Practice:
 
 <div>
 
-<h4>Accessing other diagnostic information with btp and kubernetes terraform providers....</h4>
+<h3>Accessing other diagnostic information with btp and kubernetes terraform providers....</h3>
 
 ```mermaid
 sequenceDiagram
@@ -530,27 +537,29 @@ sequenceDiagram
 
 </div>
 
-> [!NOTE]
-> The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
-> That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...  
-> It could be, for instance, shared with the SAP Product support.
-
 
 </td>
 </tr>
 </tbody>
 </table>  
 
+> [!NOTE]
+> The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
+> That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...  
+> It could be, for instance, shared with the SAP Product support.
+
+
 
 Optional practice (requires VSCode terminal):  
+
 - 👉 reuse a downloaded time-boxed service account based kubeconfig from the previous exercise
-- 👉 rerun the namespaced Data Collection Workflow against the same kyma cluster region and your namespace
+- 👉 optionally, re-run the namespaced Data Collection Workflow one more time against the same kyma cluster region and your namespace
 
  |  Data Collection Workflow (namespaced)
  | :---------  |
  | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
 
-- 👉 open: VSCode terminal window
+- 👉 open: VSCode terminal window  
 Then, in the terminal:  
 - 👉 run: `export KUBE_CONFIG_PATH=~/Downloads/timeboxed_kubeconfigs/xp264-050-sa.yaml`
 - 👉 run: `terraform init`
