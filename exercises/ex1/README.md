@@ -511,7 +511,7 @@ Practice:
 
 ### Accessing other diagnostic information with btp and kubernetes terraform providers....  
 
-👉 run the namespaced Data Collection Workflow against the same kyma cluster region as done in the previous exercise (for instance, xp264-050) and your namespace  
+- 👉 run the namespaced Data Collection Workflow against the same kyma cluster region as done in the previous exercise (for instance, xp264-050) and your namespace  
 
  |  Data Collection Workflow (namespaced)
  | :---------  |
@@ -523,14 +523,13 @@ Practice:
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 
-<div>
-
-
 > [!NOTE]
 > The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
 > That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...  
 > It could be, for instance, shared with the SAP Product support.
 
+
+<div>
 
 
 ```mermaid
