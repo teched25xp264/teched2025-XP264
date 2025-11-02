@@ -521,16 +521,6 @@ Practice:
 - 👉 Run the Data Collection Workflow
 
 
-```mermaid
-sequenceDiagram
-
-    Kyma Region (BTP Cockpit)-->>Data Collection Workflow (namespaced): cluster diagnostic ckeck
-    Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
-    Note left of Data Collection Workflow (namespaced): Choose a workflow<br/>and open it<br/>with the right click.
-
-
-```
-
  |  Data Collection Workflow (namespaced)
  | :---------  |
  | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
@@ -542,6 +532,8 @@ sequenceDiagram
 <td style="width: 71.6%; height: 193px;">
 
 <div>
+
+Data Collection Workflow (namespaced) sequence diagram...
 
 ```mermaid
 sequenceDiagram
