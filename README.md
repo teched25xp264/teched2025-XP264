@@ -1,5 +1,7 @@
 # XP264- Explore how to run cloud-native applications on SAP BTP, Kyma runtime
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-XP264)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-XP264)
+
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
