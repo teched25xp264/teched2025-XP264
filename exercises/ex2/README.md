@@ -5,8 +5,6 @@
 > [!NOTE]
 >
 > KEDA, an open-source initiative that facilitates event-driven autoscaling for Kubernetes workloads, was originally developed by Microsoft and Red Hat. It has since become a sandbox project under the Cloud Native Computing Foundation (CNCF). KEDA focuses on autoscaling applications in response to events sourced from a variety of platforms, including Kafka, RabbitMQ, and cloud-specific services such as Azure Service Bus and Google Pub/Sub.
-
-> [!NOTE]
 >
 > KEDA ushers in a new era of flexibility and efficiency in autoscaling. It enhances Kubernetes' capacity to support fine-grained autoscaling for event-driven workloads. Leveraging KEDA, you can dynamically scale your deployments from zero to any arbitrary number, contingent on the volume of events they are designed to process.
 
