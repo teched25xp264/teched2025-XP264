@@ -49,23 +49,43 @@ In the home page of the Namespace of your choice, you can see Connectivity secti
 <br>![](/exercises/ex5/images/T2_03_03.png)
 <br>![](/exercises/ex5/images/T2_03_04.png)
 
-## Exercise 5.4 Explore the results of the creation of the Destination CRs via Kubectl
+## Exercise 5.4 Explore the results of the creation of the Destination CRs
+
+Once a Destination CR is created, it is further processed by Transparent Prox
+1. Transparent Proxy internally _onboards_ the referenced BTP destination
+2. ```Kubernetes Service``` resource is created with the same name as the Destination CR
+
+**Explore the created resources**
 
 <details>
-<summary>💡 <b>If you prefer using web interface</b>, expand here and follow</summary>
-<br></br>
+<summary>💡 <b>Option 1</b> - If you would like to use <b>web interface</b>, expand here and follow</summary>
+
 In Kyma Dashboard, within your target namespace:
 
 1. Navigate to ```Connectivity``` &rarr; ```Destination CRs``` and select the items and explore the status and details
 2. Navigate to ```Discovery and Network``` &rarr; ```Services```. You'd see ```Kubernetes Service``` items for each of the available Destination CRs.
 </details>
 
-> [!TIP]
-> On your Windows based student laptop, you can use wither ```Windows PowerShell``` or ```Viual Studio Code``` to get access to the terminal.
+<details>
+<summary>💡 <b>Option 2</b> - If you would like to use <b>command line interface</b>, expand here and follow</summary>
 
-> [!IMPORTANT]
+> **IMPORTANT**
+> 
 > The execution of this exercise requires you to have previosly perforem 
 [Exercise 1.4 - Fire-fighter access to your kyma cluster](../ex1#exercise-14---fire-fighter-access-to-your-kyma-cluster). Once done, ```kubeconfig``` YAML file should be already available in the ```Downloads``` folder, e.g. ```C:\Users\<pc-specific-user-here>\Downloads\kubeconfig.yaml```
+> 
+> Alternatively you can download the ```kubeconfig``` YAML file via BTP Cockpit, see [Exercise 1.1 - Easy access to your teched landscape with SSO.](../ex1#exercise-11---easy-access-to-your-teched-landscape-with-sso)
+
+> **TIP**
+> 
+> On your Windows based student laptop, you can use wither ```Windows PowerShell``` or ```Viual Studio Code``` to get access to the terminal.
+
+Open a new ```Windows PowerShell``` or ```Visual Studio Code``` window **as Administrator** via simply typing ```powershell``` or ```vscode``` in the ```Search``` feature of Windows, then right click on ```Windows PowerShell``` or ```Visual Studio Code``` app and choose the option ```Run as administrator```.
+
+Set the ```KUBECONFIG``` environment variable
+```
+$env:KUBECONFIG = "C:\Users\<pc-specific-user-here>\Downloads\kubeconfig.yaml"
+```
 
 1. Explore Destination CRs via Terminal and Kubectl Command Line Tool
 ```
@@ -81,24 +101,12 @@ NAME      TYPE           CLUSTER-IP   EXTERNAL-IP                               
 gateway   ExternalName   <none>       gateway-x4rf8.sap-transp-proxy-system.svc.cluster.local   <none>    4d4h
 s4any     ExternalName   <none>       s4any-5cmhg.sap-transp-proxy-system.svc.cluster.local     <none>    7m11s
 ```
-
-> [!IMPORTANT]
-> For each ```Kuberenetes Service``` associated with a BTP ```destination```, the Transparent Proxy will invisibly but securely handle the traffic sent to the ```Service``` and hide the relevant technical complexity via automating technical connectivity flows and enchancing the requests with needed artefacts. You'd further try it yourself in the next exercise.
+</details>
 
 <details>
 <summary>💡 <b>In case of problems</b> with command line environment, expand here and follow</summary>
-<br></br>
-You need to download the ```kubeconfig``` YAML file and configure ```kubectl``` to use it, so that you could execute commands against your target Kyma instance.
 
-0.1. Download ```kubeconfig``` YAML file via BTP Cockpit, see [Exercise 1.1 - Easy access to your teched landscape with SSO.](../ex1#exercise-11---easy-access-to-your-teched-landscape-with-sso)
-
-0.2. Open a new ```Windows PowerShell``` or ```Visual Studio Code``` window **as Administrator** via simply typing ```powershell``` or ```vscode``` in the ```Search``` feature of Windows, then right click on ```Windows PowerShell``` or ```Visual Studio Code``` app and choose the option ```Run as administrator```.
-
-0.3. Set the ```KUBECONFIG``` environment variable
-```
-$env:KUBECONFIG = "C:\Users\<pc-specific-user-here>\Downloads\kubeconfig.yaml"
-```
-0.4. Validate the access to the Kyma instance
+**Validate the access to the Kyma instance**
 
 Execute the following command and explore the output is not empty and shows cluster details
 ```
@@ -125,7 +133,7 @@ users:
 ...
 ```
 
-Execute the following command and explore the output:
+**Try retrieving info about Kubernetes resources, for example, get the Pods**
 ```
 kubectl get pods
 ```
@@ -137,19 +145,21 @@ NAME                           READY   STATUS    RESTARTS   AGE
 httpbin-app-5958c987d6-7vptn   2/2     Running   0          12d
 ```
 
-0.2. (Optional) In case for some reason the ```kubectl``` complains that either ```krew``` or ```kubelogin``` is not installed, run this:
+💡 In case for some reason the ```kubectl``` complains that either ```krew``` or ```kubelogin``` is not installed:
 
-Trigger the installation of ```krew```:
+1. Trigger the installation of ```krew```:
 ```
 krew install krew
 ```
 
-Install ```kubelogin``` plugin for the ```kubectl``` tool. This is needed for enabling ```kubectl``` effectively use the technical credentials being part of the ```kubeconfig``` YAML file and your user context for SSO login into the Kyma instance:
+2. Install ```kubelogin``` plugin for the ```kubectl``` tool. This is needed for enabling ```kubectl``` effectively use the technical credentials being part of the ```kubeconfig``` YAML file and your user context for SSO login into the Kyma instance:
 ```
 kubectl krew install oidc-login
 ```
 </details>
 
+> [!IMPORTANT]
+> For each ```Kuberenetes Service``` associated with a BTP ```destination```, the Transparent Proxy will invisibly but securely handle the traffic sent to the ```Service``` and hide the relevant technical complexity via automating technical connectivity flows and enchancing the requests with needed artefacts. You'd further try it yourself in the next exercise.
 
 ## Summary
 
