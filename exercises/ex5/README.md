@@ -29,7 +29,7 @@ In the home page of the Namespace of your choice, you can see Connectivity secti
 <br>![](/exercises/ex5/images/T2_02_01.png)
 
 2. The actual Destination CR creation. In this example, the Destination CR is a _dynamic_ one used to reference any destination that is accessible in the context of the account in use by Transparent Proxy based on the applied configuration.
-<br>![](/exercises/exT2/images/T2_02_02.png)
+<br>![](/exercises/ex5/images/T2_02_02.png)
 
 3. Overview of the available Destination CRs
 <br>![](/exercises/ex5/images/T2_02_03.png)
