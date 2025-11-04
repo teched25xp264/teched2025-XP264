@@ -16,9 +16,12 @@
 > 
 >  A dedicated Python Function is provided, together with its load generator, in every single student namespace, with the replicas value set to 1 to prevent the internal Serverless HPA creation.  
 
+> [!NOTE]
+>
+> For the best experience, open the workflow link into into a new window (right click).  
+
 Practice:
 - 👉 run the `k8s-hpa-keda-load-generator` workflow (to be run in a separate browser window...  )
-- 👉 For the best experience, open the workflow link into into a new window (right click).  
 - 👉 Run the provided github actions workflows to experience both HPA and KEDA
 - 👉 Take time to inspect the workflows run logs.  
 - 👉 use [kyma dashboard](https://url.sap/4r4wbw) for the interactive inspection in your student's namespace.
@@ -46,9 +49,8 @@ PS. The below steps are for illustration only.
 
 - step1: initially deployed serveless python 3.12 function with a single replica....
 - step2: Scale-out to 3 or 5 replicas 
-- step3: After a little while the HPA will be up and running:  
-- step4: scale down from 5 to 2 replicas 
-- step5: scale back to a single replica.
+- step3: After a little while the HPA will be up and running
+- step4: scale back to a single replica.
 
 ## Exercise 2.1 - HPA
 
