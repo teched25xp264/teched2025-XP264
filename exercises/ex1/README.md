@@ -121,15 +121,22 @@ The fast channel offers a 14-day trial window before the modules get promoted to
 
 ## Exercise 1.1 - Easy access to your teched landscape with SSO.
 
-- This SAP Workzone dashboard is to assist you with the landscape discovery and ease the navigation thorugh the landscape components.
-- Please use your allocated student's credentials to login...
+- Access to the solution landscape is provided via the [Easy Navigation dashboard](https://url.sap/3kf0ol).  
+- Please use your allocated student's SSO credentials to login...
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="" height="600"/></a></h1>
+<!-- <h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="" height="600"/></a></h1> -->
+
+<p float="left">
+  <a href="https://url.sap/3kf0ol">
+  <img src="../ex0/images/site_navigation.png" width="600" alt="site_navigation" />
+  </a>
+</p>
+
 </div>
 </td>
 </tr>
