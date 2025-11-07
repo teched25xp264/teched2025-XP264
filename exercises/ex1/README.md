@@ -584,7 +584,7 @@ Optional practice (requires VSCode terminal):
 - 👉 open VScode explorer to `~/Documents/GitHub/teched2025-XP264/exercises/ex1/k8s-data`
 - 👉 open: VSCode terminal window  
 
-Then, in the terminal:  
+Then, in the terminal:
 - 👉 run (MacOS): `export KUBE_CONFIG_PATH=~/Downloads/timeboxed_kubeconfigs/xp264-050-sa.yaml`
 - 👉 run (Windows): `$env:KUBE_CONFIG_PATH="C:\Users\<username>\Downloads\timeboxed_kubeconfigs\xp264-050-sa.yaml`
 
@@ -615,9 +615,11 @@ Then, in the terminal:
 > * k8s-context-xp264-050-xp264-050
 > ~~~
 
- * each workspace name format is as follows: `k8ss-context-<cluster region><namespace>`
- * most likely the selected workspace in the above list will not match your diagnostic run  
- * thus you need to select that matching workspace...  
+> [!NOTE]
+> * each workspace name format is as follows: `k8ss-context-<cluster region><namespace>`
+> * most likely the selected workspace in the above list will not match your diagnostic run  
+> * thus you need to select that matching workspace...  
+>
 
 - 👉 select the workspace that matches your diagnostic run:  
 `terraform workspace select k8s-context-uk-south-xp264-050`  
