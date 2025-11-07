@@ -37,7 +37,7 @@ You must have a personal github account for this session.
 
 <p float="left">
   <a href="https://github.com/SAP-samples/teched2025-XP264">
-  <img src="../ex0/images/fork_entry.png" width="500" alt="fork_entry" />
+  <img src="../ex0/images/fork_entry.png" width="600" alt="fork_entry" />
   </a>
 </p>
 
@@ -64,7 +64,7 @@ You must have a personal github account for this session.
 
 <p float="left">
   <a href="https://github.com/SAP-samples/teched2025-XP264">
-  <img src="../ex0/images/fork_details.png" width="500" alt="fork_details" />
+  <img src="../ex0/images/fork_details.png" width="600" alt="fork_details" />
   </a>
 </p>
 
@@ -269,7 +269,15 @@ Furthermore, each student's runtime context features a preconfigured SAP Cloud C
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href=""><img class="aligncenter" src="https://github.com/user-attachments/assets/5e92690b-41ad-4cf4-993a-f8486d0bb32d" alt="" /></a></h1>
+
+<!-- <h1><a href=""><img class="aligncenter" src="https://github.com/user-attachments/assets/5e92690b-41ad-4cf4-993a-f8486d0bb32d" alt="" /></a></h1> -->
+
+<p float="left">
+  <a href="">
+  <img src="https://github.com/user-attachments/assets/5e92690b-41ad-4cf4-993a-f8486d0bb32d" width="600" alt="SAP Cloud Connector" />
+  </a>
+</p>
+
 </div>
 </td>
 </tr>
@@ -303,7 +311,16 @@ Some of the modules are added by default (istio, api-gateway and btp-operator), 
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/skr.drawio.svg" alt="" height="600"/></a></h1>
+
+<!-- <h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/skr.drawio.svg" alt="" height="600"/></a></h1> -->
+
+<p float="left">
+  <a href="https://url.sap/3kf0ol">
+  <img src="../ex0/images/skr.drawio.svg" width="600" alt="SAP Cloud Connector" />
+  </a>
+</p>
+
+
 </div>
 </td>
 </tr>
