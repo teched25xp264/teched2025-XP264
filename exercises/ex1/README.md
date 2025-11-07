@@ -583,9 +583,46 @@ Optional practice (requires VSCode terminal):
 - 👉 clone your forked github repository locally
 - 👉 open VScode explorer to `~/Documents/GitHub/teched2025-XP264/exercises/ex1/k8s-data`
 - 👉 open: VSCode terminal window  
+
 Then, in the terminal:  
 - 👉 run (MacOS): `export KUBE_CONFIG_PATH=~/Downloads/timeboxed_kubeconfigs/xp264-050-sa.yaml`
 - 👉 run (Windows): `$env:KUBE_CONFIG_PATH="C:\Users\<username>\Downloads\timeboxed_kubeconfigs\xp264-050-sa.yaml`
+
+- 👉 list all workspaces and check the selected workspace: `terraform workspace list`  
+> ~~~rust  
+> default
+> k8s-context-uk-south-c1f19148-71f7-4883-9f86-8d5ee7634dec
+> k8s-context-uk-south-xp264-004
+> k8s-context-uk-south-xp264-005
+> k8s-context-uk-south-xp264-006
+> k8s-context-uk-south-xp264-009
+> k8s-context-uk-south-xp264-010
+> k8s-context-uk-south-xp264-014
+> k8s-context-uk-south-xp264-018
+> k8s-context-uk-south-xp264-020
+> k8s-context-uk-south-xp264-023
+> k8s-context-uk-south-xp264-025
+> k8s-context-uk-south-xp264-026
+> k8s-context-uk-south-xp264-028
+> k8s-context-uk-south-xp264-029
+> k8s-context-uk-south-xp264-031
+> k8s-context-uk-south-xp264-033
+> k8s-context-uk-south-xp264-034
+> k8s-context-uk-south-xp264-035
+> k8s-context-uk-south-xp264-036
+> k8s-context-uk-south-xp264-040
+> k8s-context-uk-south-xp264-050
+> * k8s-context-xp264-050-xp264-050
+> ~~~
+
+ * each workspace name format is as follows: `k8ss-context-<cluster region><namespace>`
+ * most likely the selected workspace in the above list will not match your diagnostic run  
+ * thus you need to select that matching workspace...  
+
+- 👉 select the workspace that matches your diagnostic run:  
+`terraform workspace select k8s-context-uk-south-xp264-050`  
+`Switched to workspace "k8s-context-uk-south-xp264-050".`
+
 - 👉 run: `terraform init -upgrade`
 
 > ~~~rust       
@@ -599,16 +636,7 @@ Then, in the terminal:
 >
 > ~~~
 
-- 👉 run: `terraform workspace list`
-```
-* default
-  k8s-context-xp264-050-c1f19148-71f7-4883-9f86-8d5ee7634dec
-  k8s-context-xp264-050-xp264-050
-```
-
-- 👉 run: `terraform workspace select k8s-context-xp264-050-xp264-050`
-`Switched to workspace "k8s-context-xp264-050-xp264-050".`
-
+and, eventually...  
 
 - 👉 run and explore: `terraform output -json  KymaModules | jq '.[] | { name: .name, version: .version}'`
 
