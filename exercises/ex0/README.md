@@ -21,7 +21,7 @@ You must have a personal github account for this session.
 
 > [!IMPORTANT]
 >
-> This is **mandatory** step to be able to run the session exercises which are implemented as github actions.
+> This is a **mandatory** step to be able to run the session exercises which are implemented as github actions.
 >
 
  - 👉 Login to [GitHub](https://github.com/).
@@ -80,28 +80,6 @@ Access to the solution landscape is provided via the [Easy Navigation dashboard]
 </table>  
 
 
-- :notebook: FYI: The students can pick and choose any available kyma cluster region the following list:
-
-<!-- | BTP region              | Kyma region        |                                                                                                                                Description |
-| :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
-| japan-east (eu20/azure)               |  JAPAN EAST region | kyma environment with the cluster in the japan east region         |
-| uk-south (eu20/azure)                 |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
-| xp264-000  (eu20/azure)             |  UK SOUTH region  | kyma environment with the cluster in the uk south region         |
-| xp264-045  (eu20/azure)                |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
-| xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
-| xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
-| xp264-001  (eu10/aws)                |  EU Central region | kyma environment with the cluster in the eu central region         |
-| us-east (eu20/azure)              |  US EAST region  | kyma environment with the cluster in the us east region         |
-
- -->
-> [!IMPORTANT]
-> - Each cluster has been configured to the same template with dedicated namespaces for each student.
-> - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
-> 
-> Furthermore:
-> - The students do not have access to the master components of the landscape. 
-> - Any shared component access required for the session is granted via SSO with the links available from the [Easy Navigation site](https://url.sap/3kf0ol).
-
 
 
 ## Exercise 0.3 - BTP landscape at a glance.
@@ -118,6 +96,8 @@ You may login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](htt
 <div>
 <!-- <h1><a href="https://url.sap/yogrmc"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a>
 </h1> -->
+
+:notebook: FYI: The students can pick and choose any available kyma cluster region the following list:
 
 
 | BTP region              | Kyma region        |                                                                                                                                Description |
@@ -228,6 +208,17 @@ graph TB
 </tr>
 </tbody>
 </table>   
+
+
+
+> [!IMPORTANT]
+> - Each cluster has been configured to the same template with dedicated namespaces for each student.
+> - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
+> 
+> Furthermore:
+> - The students do not have access to the master components of the landscape. 
+> - Any shared component access required for the session is granted via SSO with the links available from the [Easy Navigation site](https://url.sap/3kf0ol).
+
 
 
 > [!NOTE]
