@@ -129,7 +129,7 @@ You may login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](htt
 <!-- <h1><a href="https://url.sap/yogrmc"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a>
 </h1> -->
 
-:notebook: FYI: The students can pick and choose any available kyma cluster region the following list:
+:notebook: FYI: The students can pick and choose any available kyma cluster region from the following list:
 
 
 | BTP region              | Kyma region        |                                                                                                                                Description |
@@ -232,6 +232,8 @@ graph TB
     style RT6_EU fill:#f0ab00,color:#000
     style RT7_EU fill:#f0ab00,color:#000
     style RT8_EU fill:#ff6666,color:#fff
+
+    click GLOBAL_ACCOUNT "https://url.sap/yogrmc"
  
 ```
 

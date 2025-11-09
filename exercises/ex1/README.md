@@ -122,7 +122,7 @@ The fast channel offers a 14-day trial window before the modules get promoted to
 ## Exercise 1.1 - Easy access to your teched landscape with SSO.
 
 - Access to the solution landscape is provided via the [Easy Navigation dashboard](https://url.sap/3kf0ol).  
-- Please use your allocated student's SSO credentials to login...
+- Please use your allocated SSO credentials to login...
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
