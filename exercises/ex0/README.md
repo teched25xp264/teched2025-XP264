@@ -233,7 +233,7 @@ graph TB
     style RT7_EU fill:#f0ab00,color:#000
     style RT8_EU fill:#ff6666,color:#fff
 
-    click GLOBAL_ACCOUNT "https://url.sap/yogrmc"
+    click PROVIDER "https://url.sap/yogrmc"
  
 ```
 
