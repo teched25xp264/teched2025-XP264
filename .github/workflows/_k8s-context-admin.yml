@@ -267,14 +267,14 @@ env:
         kubectl config current-context
         kubectl config get-contexts
 
-    - "name": "Deploy JupyterHub"
-      "run": |
-        helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
-        helm repo update
-        helm show values jupyterhub/jupyterhub > values.yaml
-        #cat ./values.yaml
-        helm uninstall -n jupyter quovadis-jupyter --ignore-not-found
-        helm upgrade --cleanup-on-fail --install quovadis-jupyter jupyterhub/jupyterhub --namespace jupyter --create-namespace --values values.yaml
+    # - "name": "Deploy JupyterHub"
+    #   "run": |
+    #     helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
+    #     helm repo update
+    #     helm show values jupyterhub/jupyterhub > values.yaml
+    #     #cat ./values.yaml
+    #     helm uninstall -n jupyter quovadis-jupyter --ignore-not-found
+    #     helm upgrade --cleanup-on-fail --install quovadis-jupyter jupyterhub/jupyterhub --namespace jupyter --create-namespace --values values.yaml
     - "name": "check permissions"
       "run": |
         kubectl auth can-i --list --namespace quovadis-btp
@@ -284,7 +284,7 @@ env:
         kubectl get cm/shoot-info -n kube-system -o json | jq .data
         kubectl get openidconnect
         kubectl get cm/kyma-provisioning-info -n kyma-system -ojsonpath='{.data.details}'
-    - "name": "kyma cli 3.2.0"
+    - "name": "kyma cli: kyma app push"
       "run": |
         echo "Installing kyma cli..."
         curl -sSL "https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Linux_x86_64.tar.gz" |  tar -xzv kyma
